@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Guild Wars: Tabletop</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS for the 'Thumbnail Gallery' Template -->
+    <link href="css/thumbnail-gallery.css" rel="stylesheet">
+	
+	<link href="lightbox2-master\src\css\lightbox.css" rel="stylesheet">
+	
+	<script src="lightbox2-master\dist\js\lightbox-plus-jquery.js"></script>
+	
+	<script>
+		$(document).ready(function() {
+			$('.clickable').hover(function() {
+				$(this).css('cursor','pointer');
+				$(this).css('color', 'white');
+				$(this).css('background-color', '#333333');
+			},
+			function() {
+				$(this).css('color', '#222222');
+				$(this).css('background-color', 'white');
+			});
+			
+			$('#skill_type').hover(function() {
+				$(this).css('border', '1pt solid red');
+				$('#layout_description').html('<div style=\"margin-top: 10%; background-color: #222222; width: 100%; height: 0.5%; position: absolute;\"></div><font style=\"font-family: Fremont-Regular; font-size: 25pt;\">SKILL TYPE</font><br><br>Every skill is described by a <b>skill type</b>.<br><br>This skill type determines how a skill is activated and how it interacts with other skills.<br><br>For a complete list of all skill types, visit the official <a href="https://wiki.guildwars.com/wiki/Skill_type">Guild Wars 1 Wiki</a>.');
+			},
+			function() {
+				$(this).css('border', 'none');
+				$('#layout_description').html('<div style=\"margin-top: 10%; background-color: #222222; width: 100%; height: 0.5%; position: absolute;\"></div><font style=\"font-family: Fremont-Regular; font-size: 25pt;\">SKILL CARD LAYOUT</font><br><br>Hover the cursor over sections of the skill card to read their descriptions.');
+			});
+		});
+	</script>
+</head>
+
+<body>
+   <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation" style="font-family: Centrale Sans Light; font-size: 14pt;">
+        <div class="container" style="width:100%; padding-left: 2%;">
+            <div class="navbar-header">
+                <a href="index.html" class="navbar-brand" href="index.php" style="color: white;">Guild Wars: Tabletop</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse" align="right" style="float: right;">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">About</a>
+                    </li>
+                    <li><a href="professions.html">Professions</a>
+                    </li>
+                    <li><a href="skills.html">Skills</a>
+                    </li>
+                    <li><a href="gameplay.html">Gameplay</a>
+                    </li>
+                    <li style="background-color: #363636;"><a><font color="white">Downloads</font></a>
+                    </li>
+                    <li><a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+	
+	<div id="skills_page" style="height: 100%; width: 100%; overflow: hidden;">
+		<!-- Overview -->
+		<div id="icon" style="margin-left: 9.9%; margin-top: 7%; background: url('images/downloads_icon.png') no-repeat center center; height: 30%; width: 15%; position: absolute;" align="middle">
+		</div>
+		<div id="name" style="margin-left: 8.4%; margin-top: 20.9%; height: 5%; width: 18%; position: absolute; font-family: Fremont-Regular; font-size: 25pt; color: #222222;" align="middle">
+			DOWNLOADS
+		</div>
+		<div id="divider" style="margin-left: 9.9%; margin-top: 24.4%; height: 5%; width: 15%; position: absolute;" align="middle">
+			<img src="images/ui/divider.png" style="height: 55%; width: 75%;"></img>
+		</div>
+		<div id="description" style="margin-left: 9.9%; margin-top: 26.9%; height: 20%; width: 15%; font-family: Centrale Sans Light; font-size: 12pt; color: #222222; position: absolute;">
+			Several helpful tools are also available, such as quick references for different professions.
+		</div>
+		<!-- Content -->
+		<div id="card_sets" class="panel" style="margin-left: 37.5%; margin-top: 3.75%; height: 74%; width: 67.5%; position: absolute;">
+			<font style="font-family: Fremont-Regular; font-size: 16pt; font-weight: bold;">CARD SETS</font><br>
+			<a href="">Prophecies.zip</a><br>
+			<a href="">Factions.zip</a><br>
+			<a href="">Nightfall.zip</a><br>
+			<a href="">Eye of the North.zip</a><br>
+			<a href="">All.zip</a><br>
+		</div>
+		<div id="combat_tools" class="panel" style="margin-left: 57.5%; margin-top: 3.75%; height: 74%; width: 67.5%; position: absolute;">
+			<font style="font-family: Fremont-Regular; font-size: 16pt; font-weight: bold;">COMBAT TOOLS</font><br>
+			<a href="">Critical Chance.exe</a><br>
+			<a href="">Damage Calculator.exe</a><br>
+			<a href="">All.zip</a><br>
+		</div>
+		<div id="quick_references" class="panel" style="margin-left: 77.5%; margin-top: 3.75%; height: 74%; width: 67.5%; position: absolute;">
+			<font style="font-family: Fremont-Regular; font-size: 16pt; font-weight: bold;">REFERENCE TABLES</font><br>
+			<a href="">Resistances.pdf</a><br>
+			<a href="">Minions.pdf</a><br>
+			<a href="">Spirits.pdf</a><br>
+			<a href="">Area of Effect.pdf</a><br>
+			<a href="">Conditions.pdf</a><br>
+			<a href="">Pets.pdf</a><br>
+			<a href="">All.zip</a><br>
+		</div>
+	</div>
+    <!-- /.container -->
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>	
+
+</body>
+
+</html>

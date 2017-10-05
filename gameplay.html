@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Guild Wars: Tabletop</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS for the 'Thumbnail Gallery' Template -->
+    <link href="css/thumbnail-gallery.css" rel="stylesheet">
+	
+	<link href="lightbox2-master\src\css\lightbox.css" rel="stylesheet">
+	
+	<script src="lightbox2-master\dist\js\lightbox-plus-jquery.js"></script>
+	
+	<script>
+		$(document).ready(function() {
+			$('#getting_started').hide();
+			$('#equipment').hide();
+			$('#combat').hide();
+			$('#leveling_up').hide();
+				
+			$('.clickable').hover(function() {
+				$(this).css('cursor','pointer');
+				$(this).css('color', 'white');
+				$(this).css('background-color', '#333333');
+			},
+			function() {
+				$(this).css('color', '#222222');
+				$(this).css('background-color', 'white');
+			});
+			
+			$('.aoe').hover(function() {
+				$(this).css('cursor','pointer');
+				$(this).css('color', 'white');
+				$(this).css('background-color', '#999999');
+			},
+			function() {
+				$(this).css('color', '#222222');
+				$(this).css('background-color', 'white');
+			});
+			
+			$('#getting_started_tab').click(function() {
+				$('#getting_started').show();
+				$('#equipment').hide();
+				$('#areas_of_effect').hide();
+				$('#combat').hide();
+				$('#leveling_up').hide();
+			});
+			$('#equipment').click(function() {
+				$('#equipment').show();
+				$('#getting_started').hide();
+				$('#areas_of_effect').hide();
+				$('#combat').hide();
+				$('#leveling_up').hide();		
+			});
+			$('#areas_of_effect_tab').click(function() {
+				$('#areas_of_effect').show();
+				$('#getting_started').hide();
+				$('#equipment').hide();
+				$('#combat').hide();
+				$('#leveling_up').hide();
+			});
+			$('#combat_tab').click(function() {
+				$('#combat').show();
+				$('#getting_started').hide();
+				$('#equipment').hide();
+				$('#areas_of_effect').hide();
+				$('#leveling_up').hide();			
+			});
+			$('#leveling_up_tab').click(function() {
+				$('#leveling_up').show();
+				$('#getting_started').hide();
+				$('#equipment').hide();
+				$('#areas_of_effect').hide();
+				$('#combat').hide();
+			});
+			
+			$('#melee').hover(function() {
+				$('#aoe').html('<img src="images/aoe/melee.png" style="height: 100%"></img>');
+				$('#aoe_description').html('<font style="font-family: Centrale Sans Light; font-size: 18pt; font-weight: bold;">Within 5 feet<br>(1 square away)</font>');
+			},
+			function() {
+			});
+			$('#adjacent_to_self').hover(function() {
+				$('#aoe').html('<img src="images/aoe/adjacent_to_self.png" style="height: 100%"></img>');
+				$('#aoe_description').html('<font style="font-family: Centrale Sans Light; font-size: 18pt; font-weight: bold;">Within 10 feet<br>(2 squares away)</font>');
+			},
+			function() {
+			});
+			$('#adjacent_to_target').hover(function() {
+				$('#aoe').html('<img src="images/aoe/adjacent_to_target.png" style="height: 100%"></img>');
+				$('#aoe_description').html('<font style="font-family: Centrale Sans Light; font-size: 18pt; font-weight: bold;">Within 5 feet<br>(1 square away)</font>');
+			},
+			function() {
+			});
+			$('#nearby').hover(function() {
+				$('#aoe').html('<img src="images/aoe/nearby.png" style="height: 100%"></img>');
+				$('#aoe_description').html('<font style="font-family: Centrale Sans Light; font-size: 18pt; font-weight: bold;">Within 15 feet<br>(3 squares away)</font>');
+			},
+			function() {
+			});
+			$('#in_the_area').hover(function() {
+				$('#aoe').html('<img src="images/aoe/in_the_area.png" style="height: 100%"></img>');
+				$('#aoe_description').html('<font style="font-family: Centrale Sans Light; font-size: 18pt; font-weight: bold;">Within 20 feet<br>(4 squares away)</font>');
+			},
+			function() {
+			});
+			$('#earshot').hover(function() {
+				$('#aoe').html('<img src="images/aoe/earshot.png" style="height: 100%"></img>');
+				$('#aoe_description').html('<font style="font-family: Centrale Sans Light; font-size: 18pt; font-weight: bold;">Within 60 feet<br>(12 squares away)</font>');
+			},
+			function() {
+			});
+			$('#spirit').hover(function() {
+				$('#aoe').html('<img src="images/aoe/spirit.png" style="height: 100%"></img>');
+				$('#aoe_description').html('<font style="font-family: Centrale Sans Light; font-size: 18pt; font-weight: bold;">Within 160 feet<br>(32 squares away)</font>');
+			},
+			function() {
+			});
+			$('#party').hover(function() {
+				$('#aoe').html('<img src="images/aoe/party.png" style="height: 100%"></img>');
+				$('#aoe_description').html('<font style="font-family: Centrale Sans Light; font-size: 18pt; font-weight: bold;">Within 270 feet<br>(54 squares away)</font>');
+			},
+			function() {
+			});
+		});
+	</script>
+</head>
+
+<body>
+   <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation" style="font-family: Centrale Sans Light; font-size: 14pt;">
+        <div class="container" style="width:100%; padding-left: 2%;">
+            <div class="navbar-header">
+                <a href="index.html" class="navbar-brand" href="index.php" style="color: white;">Guild Wars: Tabletop</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse" align="right" style="float: right;">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">About</a>
+                    </li>
+                    <li><a href="professions.html">Professions</a>
+                    </li>
+                    <li><a href="skills.html">Skills</a>
+                    </li>
+                    <li style="background-color: #363636;"><a><font color="white">Gameplay</font></a>
+                    </li>
+                    <li><a href="downloads.html">Downloads</a>
+                    </li>
+                    <li><a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+	
+	<div id="gameplay_page" style="height: 100%; width: 100%; overflow: hidden;">
+		<!-- Overview -->
+		<div id="icon" style="margin-left: 9.9%; margin-top: 7%; background: url('images/gameplay_icon.png') no-repeat center center; height: 30%; width: 15%; position: absolute;" align="middle">
+		</div>
+		<div id="name" style="margin-left: 8.4%; margin-top: 20.9%; height: 5%; width: 18%; position: absolute; font-family: Fremont-Regular; font-size: 25pt; color: #222222;" align="middle">
+			GAMEPLAY
+		</div>
+		<div id="divider" style="margin-left: 9.9%; margin-top: 24.4%; height: 5%; width: 15%; position: absolute;" align="middle">
+			<img src="images/ui/divider.png" style="height: 55%; width: 75%;"></img>
+		</div>
+		
+		<!-- Content -->
+		<div style="color: #222222; margin-left: 8.4%; height: 100%; width: 18%; position: absolute;" align="middle">
+			<div id="getting_started_tab" class="clickable" style="margin-top: 150%; font-family: Centrale Sans Light; font-size: 14pt; padding-left: 6%; width: 100%; height: 5%; border: 0.25pt solid white;" align="left">
+				1. &nbsp;GETTING STARTED
+			</div>
+			<div id="equipment_tab" class="clickable" style="font-family: Centrale Sans Light; font-size: 14pt; padding-left: 6%; width: 100%; height: 5%; border: 0.25pt solid white;" align="left">
+				2. EQUIPMENT
+			</div>
+			<div id="areas_of_effect_tab" class="clickable" style="background-color: #222222; color: white; font-family: Centrale Sans Light; font-size: 14pt; padding-left: 6%; width: 100%; height: 5%; border: 0.25pt solid white;" align="left">
+				3. AREAS OF EFFECT
+			</div>
+			<div id="combat_tab" class="clickable" style="font-family: Centrale Sans Light; font-size: 14pt; padding-left: 6%; width: 100%; height: 5%; border: 0.25pt solid white;" align="left">
+				4. COMBAT
+			</div>
+			<div id="leveling_up_tab" class="clickable" style="font-family: Centrale Sans Light; font-size: 14pt; padding-left: 6%; width: 100%; height: 5%; border: 0.25pt solid white;" align="left">
+				5. LEVELING UP
+			</div>
+			
+			<!--
+			<img src="images/icons/skills_icon.png" style="margin-top: 30%; width: 60%;"></img>
+			<div id="tab_1" class="clickable" style="margin-top: 42%; font-family: Centrale Sans Light; font-size: 18pt; color: white; background-color: #444444; padding-left: 6%; width: 100%; height: 5%; border: 0.25pt solid white;" align="left">
+				1. &nbsp;EQUIPPING SKILLS
+			</div>
+			<div id="tab_2" class="clickable" style="font-family: Centrale Sans Light; font-size: 18pt; background-color: #222222; padding-left: 6%; width: 100%; height: 5%; border: 0.25pt solid white;" align="left">
+				2. HOW TO READ
+			</div>
+			<div id="tab_3" class="clickable" style="font-family: Centrale Sans Light; font-size: 18pt; background-color: #222222; padding-left: 6%; width: 100%; height: 5%; border: 0.25pt solid white;" align="left">
+				3. SKILL TYPES
+			</div>
+			<div id="tab_4" class="clickable" style="font-family: Centrale Sans Light; font-size: 18pt; background-color: #222222; padding-left: 6%; width: 100%; height: 5%; border: 0.25pt solid white;" align="left">
+				4. RESOURCES
+			</div>
+			<div id="tab_5" class="clickable" style="font-family: Centrale Sans Light; font-size: 18pt; background-color: #222222; padding-left: 6%; width: 100%; height: 5%; border: 0.25pt solid white;" align="left">
+				5. ATTRIBUTES
+			</div>
+			<div id="tab_6" class="clickable" style="font-family: Centrale Sans Light; font-size: 18pt; background-color: #222222; padding-left: 6%; width: 100%; height: 5%; border: 0.25pt solid white;" align="left">
+				6. PRIORITY
+			</div>
+			<div id="tab_7" class="clickable" style="font-family: Centrale Sans Light; font-size: 18pt; background-color: #222222; padding-left: 6%; width: 100%; height: 5%; border: 0.25pt solid white;" align="left">
+				7. GUIDELINES
+			</div>
+			-->
+		</div>
+		
+		<!-- Getting Started -->
+		<div id="getting_started" class="panel" style="color: #222222; margin-left: 32.5%; margin-top: 5%; height: 70%; width: 67.5%; position: absolute;">
+			<font style="font-family: Fremont-Regular; font-size: 25pt;">GETTING STARTED</font>
+			<div id="armor" class="equipment" style="margin-left: -2.5%; margin-top: 18.5%; height: 6.5%; width: 9%;" align="middle">
+				<font style="font-family: Centrale Sans Light; font-size: 18pt; font-weight: bold;">Armor</font>
+			</div>
+			<div id="weapons" class="equipment" style="background-color: #999999; color: white; margin-top: -3.5%; margin-left: 6.5%; height: 6.5%; width: 17%;" align="middle">
+				<font style="font-family: Centrale Sans Light; font-size: 18pt; font-weight: bold;">Weapons</font>
+			</div>
+		</div>
+		
+		<!-- Equipment -->
+		<div id="equipment" class="panel" style="margin-left: 32.5%; margin-top: 3.75%; height: 74%; width: 67.5%; position: absolute;">
+			<font style="font-family: Fremont-Regular; font-size: 25pt;">EQUIPMENT</font>
+		</div>
+		
+		<!-- Areas of Effect -->
+		<div id="areas_of_effect" class="panel" style="margin-left: 32.5%; margin-top: 3.75%; height: 74%; width: 67.5%; position: absolute;">
+			<font style="font-family: Fremont-Regular; font-size: 25pt;">AREAS OF EFFECT</font>
+			<div id="aoe" style="margin-left: 5%; margin-top: 2%; height: 80%; width: 45%;" align="middle">
+				<img src="images/aoe/adjacent_to_self.png" style="height: 100%"></img>
+			</div>
+			<div id="aoe_description" style="margin-left: 75%; margin-top: -25.41%; height: 18%; width: 20%;" align="middle">
+			</div>
+			<div id="melee" class="aoe" style="margin-left: -2.5%; margin-top: 18.5%; height: 6.5%; width: 9%;" align="middle">
+				<font style="font-family: Centrale Sans Light; font-size: 18pt; font-weight: bold;">Melee</font>
+			</div>
+			<div id="adjacent_to_self" class="aoe" style="background-color: #999999; color: white; margin-top: -3.5%; margin-left: 6.5%; height: 6.5%; width: 17%;" align="middle">
+				<font style="font-family: Centrale Sans Light; font-size: 18pt; font-weight: bold;">Adjacent (Self)</font>
+			</div>
+			<div id="adjacent_to_target" class="aoe" style="margin-top: -3.5%; margin-left: 23.5%; height: 6.5%; width: 20%;" align="middle">
+				<font style="font-family: Centrale Sans Light; font-size: 18pt; font-weight: bold;">Adjacent (Target)</font>
+			</div>
+			<div id="nearby" class="aoe" style="margin-top: -3.5%; margin-left: 43.5%; height: 6.5%; width: 9%;" align="middle">
+				<font style="font-family: Centrale Sans Light; font-size: 18pt; font-weight: bold;">Nearby</font>
+			</div>
+			<div id="in_the_area" class="aoe" style="margin-top: -3.5%; margin-left: 52.5%; height: 6.5%; width: 14%;" align="middle">
+				<font style="font-family: Centrale Sans Light; font-size: 18pt; font-weight: bold;">In The Area</font>
+			</div>
+			<div id="earshot" class="aoe" style=" margin-top: -3.5%; margin-left: 66.5%; height: 6.5%; width: 10%;" align="middle">
+				<font style="font-family: Centrale Sans Light; font-size: 18pt; font-weight: bold;">Earshot</font>
+			</div>
+			<div id="spirit" class="aoe" style="margin-top: -3.5%; margin-left: 76.5%; height: 6.5%; width: 8%;" align="middle">
+				<font style="font-family: Centrale Sans Light; font-size: 18pt; font-weight: bold;">Spirit</font>
+			</div>
+			<div id="party" class="aoe" style="margin-top: -3.55%; margin-left: 84.5%; height: 6.5%; width: 8%;" align="middle">
+				<font style="font-family: Centrale Sans Light; font-size: 18pt; font-weight: bold;">Party</font>
+			</div>
+		</div>
+		
+		<!-- Combat -->
+		<div id="combat" class="panel" style="margin-left: 32.5%; margin-top: 5%; height: 70%; width: 67.5%; position: absolute;">
+			<font style="font-family: Fremont-Regular; font-size: 25pt;">COMBAT</font>
+		</div>
+		
+		<!-- Leveling Up -->
+		<div id="leveling_up" class="panel" style="margin-left: 32.5%; margin-top: 5%; height: 70%; width: 67.5%; position: absolute;">
+			<font style="font-family: Fremont-Regular; font-size: 25pt;">LEVELING UP</font>
+		</div>
+	</div>
+    <!-- /.container -->
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>	
+
+</body>
+
+</html>

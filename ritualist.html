@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Thumbnail Gallery Template for Bootstrap 3</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS for the 'Thumbnail Gallery' Template -->
+    <link href="css/thumbnail-gallery.css" rel="stylesheet">
+	
+	<link href="lightbox2-master\src\css\lightbox.css" rel="stylesheet">
+	
+	
+	<script src="lightbox2-master\dist\js\lightbox-plus-jquery.js"></script>
+	
+	<script>
+		$(document).ready(function() {
+			// Hide attributes and tips
+			$('#attributes').hide();	
+			$('#tips').hide();	
+			$('#physical_resistance_bar').animate({width: "3.1%"}, 750);
+			$('#elemental_resistance_bar').animate({width: "3.1%"}, 750);
+			$('#energy_bar').animate({width: "15.5%"}, 750);
+			$('#energy_regeneration_bar').animate({width: "15.5%"}, 750);
+			
+			$('.clickable').hover(function() {
+				$(this).css('cursor','pointer');
+			},
+			function() {
+			})
+			
+			// Ritualist navigation
+			$('#traits_tab').click(function() {
+				$('#tab_label').html("FEATS");
+		
+				$(this).css('background-color', '#222222');
+				$('#attributes_tab').css('background-color', '#21dcc0');
+				$('#tips_tab').css('background-color', '#21dcc0');
+				
+				$('#traits').fadeIn(125);
+				$('#attributes').fadeOut(125);
+				$('#tips').fadeOut(125);
+			});	
+			$('#attributes_tab').click(function() {			
+				$('#tab_label').html("ATTRIBUTES");
+				
+				$('#traits_tab').css('background-color', '#21dcc0');
+				$(this).css('background-color', '#222222');
+				$('#tips_tab').css('background-color', '#21dcc0');
+				
+				$('#traits').fadeOut(125);
+				$('#attributes').fadeIn(125);
+				$('#tips').fadeOut(125);				
+			});
+			$('#tips_tab').click(function() {			
+				$('#tab_label').html("TIPS");
+				
+				$('#traits_tab').css('background-color', '#21dcc0');
+				$('#attributes_tab').css('background-color', '#21dcc0');
+				$(this).css('background-color', '#222222');
+				
+				$('#traits').fadeOut(125);
+				$('#attributes').fadeOut(125);
+				$('#tips').fadeIn(125);
+			});
+		
+			// Attributes navigation
+			$('#spawning_power').hover(function() {
+				$(this).css('color', '#21dcc0');
+				$('#channeling_magic').css('color', '#222222');
+				$('#communing').css('color', '#222222');
+				$('#restoration_magic').css('color', '#222222');
+				
+				$('#bullet_1').attr('src', 'images/ui/bullet_fill.png');
+				$('#bullet_2').attr('src', 'images/ui/bullet.png');
+				$('#bullet_3').attr('src', 'images/ui/bullet.png');
+				$('#bullet_4').attr('src', 'images/ui/bullet.png');
+				$('#bullet_5').attr('src', 'images/ui/bullet.png');
+				
+				$('#example').attr('src', 'images/example_skills/glyph_of_lesser_energy.png');
+			}, function() {
+			});
+			$('#channeling_magic').hover(function() {
+				$('#spawning_power').css('color', '#222222');
+				$(this).css('color', '#21dcc0');
+				$('#communing').css('color', '#222222');
+				$('#restoration_magic').css('color', '#222222');
+				
+				$('#bullet_1').attr('src', 'images/ui/bullet.png');
+				$('#bullet_2').attr('src', 'images/ui/bullet_fill.png');
+				$('#bullet_3').attr('src', 'images/ui/bullet.png');
+				$('#bullet_4').attr('src', 'images/ui/bullet.png');
+				$('#bullet_5').attr('src', 'images/ui/bullet.png');
+				
+				$('#example').attr('src', 'images/example_skills/shock.png');
+			}, function() {
+			});
+			$('#communing').hover(function() {
+				$('#spawning_power').css('color', '#222222');
+				$('#channeling_magic').css('color', '#222222');
+				$(this).css('color', '#21dcc0');
+				$('#restoration_magic').css('color', '#222222');
+				
+				$('#bullet_1').attr('src', 'images/ui/bullet.png');
+				$('#bullet_2').attr('src', 'images/ui/bullet.png');
+				$('#bullet_3').attr('src', 'images/ui/bullet_fill.png');
+				$('#bullet_4').attr('src', 'images/ui/bullet.png');
+				$('#bullet_5').attr('src', 'images/ui/bullet.png');
+				
+				$('#example').attr('src', 'images/example_skills/armor_of_earth.png');
+			}, function() {
+			});
+			$('#restoration_magic').hover(function() {
+				$('#spawning_power').css('color', '#222222');
+				$('#channeling_magic').css('color', '#222222');
+				$('#communing').css('color', '#222222');
+				$(this).css('color', '#21dcc0');
+				
+				$('#bullet_1').attr('src', 'images/ui/bullet.png');
+				$('#bullet_2').attr('src', 'images/ui/bullet.png');
+				$('#bullet_3').attr('src', 'images/ui/bullet.png');
+				$('#bullet_4').attr('src', 'images/ui/bullet_fill.png');
+				$('#bullet_5').attr('src', 'images/ui/bullet.png');
+				
+				$('#example').attr('src', 'images/example_skills/immolate.png');
+			}, function() {
+			});
+		
+			// Profession navigation
+			$('.profession_nav').hover(function() {			
+				$('#nav_label').show();
+			},
+			function(){
+				$('#nav_label').hide();
+			});
+			// Warrior
+			$('#warrior_nav').hover(function() {
+				$(this).css('background', 'url(\'images/icons/warrior_nav.png\')  no-repeat center center');
+				$('#nav_label').css('marginLeft', '17.875%');
+				$('#nav_label').html('WARRIOR');
+			},
+			function(){
+				$(this).css('background', 'url(\'images/icons/warrior_nav_bw.png\')  no-repeat center center');
+			});				
+			// Ranger
+			$('#ranger_nav').hover(function() {
+				$(this).css('background', 'url(\'images/icons/ranger_nav.png\')  no-repeat center center');
+				$('#nav_label').css('marginLeft', '23.875%');
+				$('#nav_label').html('RANGER');
+			},
+			function(){
+				$(this).css('background', 'url(\'images/icons/ranger_nav_bw.png\')  no-repeat center center');
+			});					
+			// Monk
+			$('#monk_nav').hover(function() {
+				$(this).css('background', 'url(\'images/icons/monk_nav.png\')  no-repeat center center');
+				$('#nav_label').css('marginLeft', '29.875%');
+				$('#nav_label').html('MONK');
+			},
+			function(){
+				$(this).css('background', 'url(\'images/icons/monk_nav_bw.png\')  no-repeat center center');
+			});					
+			// Necromancer
+			$('#necromancer_nav').hover(function() {
+				$(this).css('background', 'url(\'images/icons/necromancer_nav.png\')  no-repeat center center');
+				$('#nav_label').css('marginLeft', '35.875%');
+				$('#nav_label').html('NECROMANCER');
+			},
+			function(){
+				$(this).css('background', 'url(\'images/icons/necromancer_nav_bw.png\')  no-repeat center center');
+			});					
+			// Mesmer
+			$('#mesmer_nav').hover(function() {
+				$(this).css('background', 'url(\'images/icons/mesmer_nav.png\')  no-repeat center center');
+				$('#nav_label').css('marginLeft', '41.875%');
+				$('#nav_label').html('MESMER');
+			},
+			function(){
+				$(this).css('background', 'url(\'images/icons/mesmer_nav_bw.png\')  no-repeat center center');
+			});					
+			// Elementalist
+			$('#elementalist_nav').hover(function() {
+				$(this).css('background', 'url(\'images/icons/elementalist_nav.png\')  no-repeat center center');
+				$('#nav_label').css('marginLeft', '47.875%');
+				$('#nav_label').html('ELEMENTALIST');
+			},
+			function(){
+				$(this).css('background', 'url(\'images/icons/elementalist_nav_bw.png\')  no-repeat center center');
+			});					
+			// Assassin
+			$('#assassin_nav').hover(function() {
+				$(this).css('background', 'url(\'images/icons/assassin_nav.png\')  no-repeat center center');
+				$('#nav_label').css('marginLeft', '53.875%');
+				$('#nav_label').html('ASSASSIN');
+			},
+			function(){
+				$(this).css('background', 'url(\'images/icons/assassin_nav_bw.png\')  no-repeat center center');
+			});					
+			// Paragon
+			$('#paragon_nav').hover(function() {
+				$(this).css('background', 'url(\'images/icons/paragon_nav.png\')  no-repeat center center');
+				$('#nav_label').css('marginLeft', '65.875%');
+				$('#nav_label').html('PARAGON');
+			},
+			function(){
+				$(this).css('background', 'url(\'images/icons/paragon_nav_bw.png\')  no-repeat center center');
+			});					
+			// Dervish
+			$('#dervish_nav').hover(function() {
+				$(this).css('background', 'url(\'images/icons/dervish_nav.png\')  no-repeat center center');
+				$('#nav_label').css('marginLeft', '71.875%');
+				$('#nav_label').html('DERVISH');
+			},
+			function(){
+				$(this).css('background', 'url(\'images/icons/dervish_nav_bw.png\')  no-repeat center center');
+			});
+		});
+	</script>
+</head>
+
+<body>
+   <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation" style="font-family: Centrale Sans Light; font-size: 14pt;">
+        <div class="container" style="width:100%;">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.php" style="color: white;">Guild Wars: Tabletop</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse" align="right" style="float: right;">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">About</a>
+                    </li>
+                    <li style="background-color: #363636;"><a><font color="white">Professions</font></a>
+                    </li>
+                    <li><a href="skills.html">Skills</a>
+                    </li>
+                    <li><a href="gameplay.html">Gameplay</a>
+                    </li>
+                    <li><a href="downloads.html">Downloads</a>
+                    </li>
+                    <li><a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+	
+	<div id="ritualist_page" style="height: 100%; width: 100%; overflow: hidden;">
+		<!-- Overview -->
+		<div id="portrait" style="margin-left: 8.4%; margin-top: 3%; height: 34%; width: 18%; position: absolute;" align="middle">
+			<img src="images/portraits/ritualist.png" style="height: 100%; width: 100%;"></img>
+		</div>
+		<div id="name" style="margin-left: 8.4%; margin-top: 20.9%; height: 5%; width: 18%; position: absolute; font-family: Fremont-Regular; font-size: 25pt; color: #222222;" align="middle">
+			RITUALIST
+		</div>
+		<div id="divider" style="margin-left: 9.9%; margin-top: 24.4%; height: 5%; width: 15%; position: absolute;" align="middle">
+			<img src="images/ui/divider.png" style="height: 55%; width: 75%;"></img>
+		</div>
+		<div id="physical_resistance" title="Physical Resistance" style="margin-left: 8.4%; margin-top: 26.9%; height: 4%; width: 2%; background: url('images/ui/physical_resistance.png') no-repeat center center; position: absolute;">
+		</div>
+		<div id="elemental_resistance" style="margin-left: 8.4%; margin-top: 29.4%; height: 4%; width: 2%; background: url('images/ui/elemental_resistance.png') no-repeat center center; position: absolute;">
+		</div>
+		<div id="energy" style="margin-left: 8.4%; margin-top: 31.9%; height: 4%; width: 2%; background: url('images/ui/energy.png') no-repeat center center; position: absolute;">
+		</div>
+		<div id="energy_regeneration" style="margin-left: 8.4%; margin-top: 34.4%; height: 4%; width: 2%; background: url('images/ui/energy_regeneration.png') no-repeat center center; position: absolute;">
+		</div>
+		<div id="physical_resistance_bar" title="Physical Resistance" style="background: url('images/ui/physical_resistance_bar.png');  background-repeat: repeat-x; border: 1px solid rgba(0, 0, 0, 0.5); margin-left: 10.9%; margin-top: 26.9%; height: 4%; width: 0%; position: absolute;">
+		</div>
+		<div id="elemental_resistance_bar" style="background: url('images/ui/elemental_resistance_bar.png');  background-repeat: repeat-x; border: 1px solid rgba(0, 0, 0, 0.5); margin-left: 10.9%; margin-top: 29.4%; height: 4%; position: absolute;">
+		</div>
+		<div id="energy_bar" style="background: url('images/ui/energy_bar.png');  background-repeat: repeat-x; border: 1px solid rgba(0, 0, 0, 0.5); margin-left: 10.9%; margin-top: 31.9%; height: 4%; position: absolute;">
+		</div>
+		<div id="energy_regeneration_bar" style="background: url('images/ui/energy_regeneration_bar.png');  background-repeat: repeat-x; border: 1px solid rgba(0, 0, 0, 0.5); margin-left: 10.9%; margin-top: 34.4%; height: 4%; position: absolute;">
+		</div>
+		
+		<!-- Tabs -->
+		<div id="tab_label" style="margin-left: 35%; margin-top: 3%; height: 12%; width: 26%; position: absolute; font-family: Centrale Sans Light; font-size: 50pt; color: #21dcc0;">
+			FEATS
+		</div>
+		<div id="traits_tab" class="clickable" style="background: url('images/icons/feats.png') no-repeat center center; background-color: #222222; margin-left: 85.5%; margin-top: 4.4%; height: 7%; width: 3%; position: absolute; font-family: Centrale Sans Light; color: white;" align="middle">
+		</div>
+		<div id="attributes_tab" class="clickable" style="background: url('images/icons/attributes.png') no-repeat center center; background-color: #21dcc0; margin-left: 89.5%; margin-top: 4.4%; height: 7%; width: 3%; position: absolute; font-family: Centrale Sans Light; color: white;" align="middle">
+		</div>
+		<div id="tips_tab" class="clickable" style="background: url('images/icons/tips.png') no-repeat center center;background-color: #21dcc0; margin-left: 93.5%; margin-top: 4.4%; height: 7%; width: 3%; position: absolute; font-family: Centrale Sans Light; color: white;" align="middle">
+			</font>
+		</div>
+		<div id="tab_divider" style="background-color: #21dcc0; margin-left: 35%; margin-top: 8.9%; height: 0.5%; width: 65%; position: absolute;" align="middle">
+		</div>
+		
+		<!-- Content -->
+		<!-- Traits -->
+		<div id="traits" style="margin-left: 35%; margin-top: 10.5%; height: 52.3%; width: 65%; position: absolute;">
+			<div id="trait one icon" style="margin-left: 0%; margin-top: 0%; width: 16.666%; height: 45%; position absolute;">
+				<img src="images/traits/materialize.png" style="height: 100%; width: 100%;"></img>
+			</div>
+			
+			<div id="trait one" style="margin-left: 16.666%; margin-top: -17.9%; width: 33.333%; height: 45%; padding: 1%; position absolute;">
+				<font style="font-family: Fremont-Regular; font-size: 22pt; color: #222222;">MATERIALIZE</font><br>
+				<font style="font-family: Centrale Sans Light; font-size: 16pt; color: #222222;">
+					Serve as a conduit to manifest the spirit world onto the material plane
+				</font>
+			</div>
+			
+			<div id="trait two icon" style="background-color: green; margin-left: 50%; margin-top: -17.9%; width: 16.666%; height: 45%; position absolute;">
+				<img src="images/traits/binding_rituals.png" style="height: 100%; width: 100%;"></img>
+			</div>
+			
+			<div id="trait two" style="margin-left: 66.666%; margin-top: -17.9%; width: 33.333%; height: 45%; padding: 1%; position absolute;">
+				<font style="font-family: Fremont-Regular; font-size: 22pt; color: #222222;">BINDING RITUALS</font><br>
+				<font style="font-family: Centrale Sans Light; font-size: 16pt; color: #222222;">
+					Summon spirits from beyond and bind them to your will
+				</font>
+			</div>
+			
+			<div id="trait three icon" style="background-color: green; margin-left: 0%; margin-top: 4%; width: 16.666%; height: 45%; position absolute;">
+				<img src="images/traits/ashes.png" style="height: 100%; width: 100%;"></img>
+			</div>
+			
+			<div id="trait three" style="margin-left: 16.666%; margin-top: -17.9%; width: 33.333%; height: 45%; padding: 1%; position absolute;">
+				<font style="font-family: Fremont-Regular; font-size: 22pt; color: #222222;">ASHES</font><br>
+				<font style="font-family: Centrale Sans Light; font-size: 16pt; color: #222222;">
+					Invoke the strength of legends past through their ashes
+				</font>
+			</div>
+			
+			<div id="trait four icon" style="background-color: green; margin-left: 50%; margin-top: -17.9%; width: 16.666%; height: 45%; position absolute;">
+				<img src="images/traits/spirit_weapons.png" style="height: 100%; width: 100%;"></img>
+			</div>
+			
+			<div id="trait four" style="red; margin-left: 66.666%; margin-top: -17.9%; width: 33.333%; height: 45%; padding: 1%; position absolute;">
+				<font style="font-family: Fremont-Regular; font-size: 22pt; color: #222222;">SPIRIT WEAPONS</font><br>
+				<font style="font-family: Centrale Sans Light; font-size: 16pt; color: #222222;">
+					Conjure deadly weapons from the Mists
+				</font>
+			</div>
+		</div>
+		
+		<!-- Attributes -->
+		<div id="attributes" style="margin-left: 35%; margin-top: 10.5%; height: 52.3%; width: 65%; position: absolute;">
+			
+			<div id="spawning_power" style="margin-left: 0%; margin-top: 0%; width: 66%; height: 20%; padding: 1%; position: absolute;">
+				<font class="clickable" style="font-family: Fremont-Regular; font-size: 20pt;">
+					<img id="bullet_1" src="images/ui/bullet.png" style="height: 25%; margin-top: -1%;"></img>
+					SPAWNING POWER (PRIMARY)</font><br>
+				<font style="margin-left: 5.5%; font-family: Centrale Sans Light; font-size: 13pt; color: #222222;">
+					Spirits have more health and weapon spells last longer (up to 48% each)
+				</font>
+			</div>
+			
+			<div id="channeling_magic" style="color: #21dcc0; margin-left: 0%; margin-top: 7.9%; width: 66%; height: 20%; padding: 1%; position: absolute;">
+				<font class="clickable" style="font-family: Fremont-Regular; font-size: 20pt;">
+					<img id="bullet_2" src="images/ui/bullet_fill.png" style="height: 25%; margin-top: -1%;"></img>
+					CHANNELING MAGIC</font><br>
+				<font style="margin-left: 5.5%; font-family: Centrale Sans Light; font-size: 13pt; color: #222222;">
+					Deal lightning damage through binding rituals and weapon spells
+				</font>
+			</div>
+			
+			<div id="communing" style="margin-left: 0%; margin-top: 15.8%; width: 66%; height: 20%; padding: 1%; position: absolute;">
+				<font class="clickable" style="font-family: Fremont-Regular; font-size: 20pt;">
+					<img id="bullet_3" src="images/ui/bullet.png" style="height: 25%; margin-top: -1%;"></img>
+					COMMUNING</font><br>
+				<font style="margin-left: 5.5%; font-family: Centrale Sans Light; font-size: 13pt; color: #222222;">
+					Summon spirits from the Mists to do your bidding
+				</font>
+			</div>
+			
+			<div id="restoration_magic" style="margin-left: 0%; margin-top: 23.7%; width: 66%; height: 20%; padding: 1%; position: absolute;">
+				<font class="clickable" style="font-family: Fremont-Regular; font-size: 20pt;">
+					<img id="bullet_4" src="images/ui/bullet.png" style="height: 25%; margin-top: -1%;"></img>
+					RESTORATION MAGIC</font><br>
+				<font style="margin-left: 5.5%; font-family: Centrale Sans Light; font-size: 13pt; color: #222222;">
+					Use healing, life stealing, and defense
+				</font>
+			</div>
+			
+			<div id="skill_card" style="margin-left: 64.75%; margin-top: 0%; width: 30%; height: 100%; position: absolute;">
+				<img id="example" class="clickable" src="images/example_skills/shock.png" style="height: 100%; width: 100%;"></img>
+			</div>
+		</div>
+		
+		<!-- Tips -->
+		
+		<!-- Profession Navigation -->
+		<div id="nav_label" style="margin-left: 17.875%; margin-top: 39.5%; height: 3%; width: 10%; position: absolute; font-family: Fremont-Regular; font-size: 15pt;" align="middle">
+		</div>
+		<div id="navigation" style="background-color: #222222; margin-left: 12.5%; margin-top: 41.3%; width: 75%; height: 10%; position: absolute;">
+			<div id="triangle-topleft" style="height: 100%"></div>
+			<div id="triangle-topright" style="height: 100%"></div>
+		</div>
+		<a href="warrior.html">
+			<div id="warrior_nav" class="profession_nav" style="background: url('images/icons/warrior_nav_bw.png') no-repeat center center; margin-left: 21%; margin-top: 42%; width: 3.75%; height: 7.25%; position: absolute;">
+			</div>
+		</a>
+		<a href="ranger.html">
+			<div id="ranger_nav" class="profession_nav" style="background: url('images/icons/ranger_nav_bw.png') no-repeat center center; margin-left: 27%; margin-top: 42%; width: 3.75%; height: 7.25%; position: absolute;">
+			</div>
+		</a>
+		<a href="monk.html">	
+			<div id="monk_nav" class="profession_nav" style="background: url('images/icons/monk_nav_bw.png') no-repeat center center; margin-left: 33%; margin-top: 42%; width: 3.75%; height: 7.25%; position: absolute;">
+			</div>	
+		</a>	
+		<a href="necromancer.html">	
+			<div id="necromancer_nav" class="profession_nav" style="background: url('images/icons/necromancer_nav_bw.png') no-repeat center center; margin-left: 39%; margin-top: 42%; width: 3.75%; height: 7.25%; position: absolute;">
+			</div>
+		</a>
+		<a href="mesmer.html">	
+			<div id="mesmer_nav" class="profession_nav" style="background: url('images/icons/mesmer_nav_bw.png') no-repeat center center; margin-left: 45%; margin-top: 42%; width: 3.75%; height: 7.25%; position: absolute;">
+			</div>
+		</a>
+		<a href="elementalist.html">	
+			<div id="elementalist_nav" class="profession_nav" style="background: url('images/icons/elementalist_nav_bw.png') no-repeat center center; margin-left: 51%; margin-top: 42%; width: 3.75%; height: 7.25%; position: absolute;">
+			</div>
+		</a>
+		<a href="assassin.html">	
+			<div id="assassin_nav" class="profession_nav" style="background: url('images/icons/assassin_nav_bw.png') no-repeat center center; margin-left: 57%; margin-top: 42%; width: 3.75%; height: 7.25%; position: absolute;">
+			</div>
+		</a>
+		<div id="ritualist_nav" style="background: url('images/icons/ritualist_nav.png') no-repeat center center; margin-left: 63%; margin-top: 42%; width: 3.75%; height: 7.25%; position: absolute;">
+		</div>
+		<a href="paragon.html">	
+			<div id="paragon_nav" class="profession_nav" style="background: url('images/icons/paragon_nav_bw.png') no-repeat center center; margin-left: 69%; margin-top: 42%; width: 3.75%; height: 7.25%; position: absolute;">
+			</div>
+		</a>
+		<a href="dervish.html">	
+			<div id="dervish_nav" class="profession_nav" style="background: url('images/icons/dervish_nav_bw.png') no-repeat center center; margin-left: 75%; margin-top: 42%; width: 3.75%; height: 7.25%; position: absolute;">
+			</div>
+		</a>
+	</div>
+    <!-- /.container -->
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>	
+
+</body>
+
+</html>
