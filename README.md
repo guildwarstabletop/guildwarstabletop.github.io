@@ -1,1 +1,0 @@
-# guildwarstabletop.github.io

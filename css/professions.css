@@ -1,0 +1,108 @@
+/*!
+ * Bootstrap v3.1.0 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+
+@font-face {
+    font-family: Centrale Sans Light;
+    src: url('../fonts/Centrale Sans Light.otf');
+}
+
+@font-face {
+    font-family: Fremont-Regular;
+    src: url('../fonts/Fremont-Regular.ttf');
+}
+
+@font-face {
+    font-family: SourceSansPro-Regular;
+    src: url('../fonts/SourceSansPro-Regular.otf');
+}
+
+#professions_content {
+	padding-top: 3.3%;
+}
+
+#icon {
+	background: url('../images/ui/professions_icon.png') no-repeat center center;
+	height: 30%;
+	margin-left: 9.9%;
+	margin-top: 7%;
+	position: absolute;
+	width: 15%;
+}
+
+#name {
+	font-family: Fremont-Regular;
+	font-size: 25pt;
+	height: 5%;
+	margin-left: 8.4%;
+	margin-top: 20.9%;
+	position: absolute;
+	width: 18%;
+}
+
+#divider {
+	height: 5%;
+	margin-left: 9.9%;
+	margin-top: 24.4%;
+	position: absolute;
+	width: 15%;
+}
+
+#description {
+	height: 20%;
+	margin-left: 9.9%;
+	margin-top: 26.9%;
+	position: absolute;
+	width: 15%;
+}
+
+.panel {
+	height: 70%;
+	margin-top: 5%;
+	position: absolute;
+	width: 6%;
+}
+
+#warrior {
+	margin-left: 32.5%;
+}
+
+#ranger {
+	margin-left: 38.5%;
+}
+
+#monk {
+	margin-left: 44.5%;
+}
+
+#necromancer {
+	margin-left: 50.5%;
+}
+
+#mesmer {
+	margin-left: 56.5%;
+}
+
+#elementalist {
+	margin-left: 62.5%;
+}
+
+#assassin {
+	margin-left: 68.5%;
+}
+
+#ritualist {
+	margin-left: 74.5%;
+}
+
+#paragon {
+	margin-left: 80.5%;
+}
+
+#dervish {
+	margin-left: 86.5%;
+}

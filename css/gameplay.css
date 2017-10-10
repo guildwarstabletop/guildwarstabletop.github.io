@@ -1,0 +1,102 @@
+/*!
+ * Bootstrap v3.1.0 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+
+@font-face {
+    font-family: Centrale Sans Light;
+    src: url('../fonts/Centrale Sans Light.otf');
+}
+
+@font-face {
+    font-family: Fremont-Regular;
+    src: url('../fonts/Fremont-Regular.ttf');
+}
+
+@font-face {
+    font-family: SourceSansPro-Regular;
+    src: url('../fonts/SourceSansPro-Regular.otf');
+}
+
+#gameplay_content {
+	padding-top: 3.3%;
+}
+
+#icon {
+	background: url('../images/ui/gameplay_icon.png') no-repeat center center;
+	height: 30%;
+	margin-left: 9.9%;
+	margin-top: 7%;
+	position: absolute;
+	width: 15%;
+}
+
+#name {
+	font-family: Fremont-Regular;
+	font-size: 25pt;
+	height: 5%;
+	margin-left: 8.4%;
+	margin-top: 20.9%;
+	position: absolute;
+	width: 18%;
+}
+
+#divider {
+	height: 5%;
+	margin-left: 9.9%;
+	margin-top: 24.4%;
+	position: absolute;
+	width: 15%;
+}
+
+#description {
+	height: 20%;
+	margin-left: 9.9%;
+	margin-top: 26.9%;
+	position: absolute;
+	width: 15%;
+}
+
+#character {
+	border: 1pt solid #222222;
+	background-color: #222222;
+	color: white;
+	font-family: Fremont-Regular;
+	font-size: 18pt;
+	margin-left: 32.55%;
+	margin-top: 5.05%;
+	padding-left: 5px;
+	padding-right: 5px;
+	position: absolute;
+}
+
+#build {
+	border: 1pt solid #222222;
+	color: #222222;
+	font-family: Fremont-Regular;
+	font-size: 18pt;
+	margin-left: 42.65%;
+	margin-top: 5.05%;
+	padding-left: 5px;
+	padding-right: 5px;
+	position: absolute;
+}
+
+#combat {
+	border: 1pt solid #222222;
+	color: #222222;
+	font-family: Fremont-Regular;
+	font-size: 18pt;
+	margin-left: 50%;
+	margin-top: 5.05%;
+	padding-left: 5px;
+	padding-right: 5px;
+	position: absolute;
+}
+
+#choosing_professions {
+	
+}

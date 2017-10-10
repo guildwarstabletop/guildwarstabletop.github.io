@@ -1,0 +1,63 @@
+/*!
+ * Bootstrap v3.1.0 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+
+@font-face {
+    font-family: Centrale Sans Light;
+    src: url('../fonts/Centrale Sans Light.otf');
+}
+
+@font-face {
+    font-family: Fremont-Regular;
+    src: url('../fonts/Fremont-Regular.ttf');
+}
+
+@font-face {
+    font-family: SourceSansPro-Regular;
+    src: url('../fonts/SourceSansPro-Regular.otf');
+}
+
+#index_content {
+	height: 62.5%;
+	margin-left: 12.8%;
+	margin-top: 10.4%;
+	position: absolute;
+	width: 34.65%;
+}
+
+#index_header {
+	font-size: 16pt;
+	font-weight: bold;
+	padding: 10px;
+	position: absolute;
+}
+
+#index_description {
+	font-family: Centrale Sans Light;
+	font-size: 12pt;
+	margin-top: 10%;
+	padding: 10px;
+	position: absolute;
+}
+
+#index_cards {
+	background: url('../images/ui/index_cards.png') no-repeat center center;
+	height: 54.2%;
+	margin-left: 55.5%;
+	margin-top: 11.4%;
+	position: absolute;
+	width: 35.45%;
+}
+
+#index_icon {
+	background: url('../images/ui/index_icon.png') no-repeat center center;
+	height: 25.4%;
+	margin-left: 69%;
+	margin-top: 28.4%;
+	position: absolute;
+	width: 10.75%;
+}

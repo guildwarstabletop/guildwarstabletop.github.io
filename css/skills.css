@@ -1,0 +1,184 @@
+/*!
+ * Bootstrap v3.1.0 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+
+@font-face {
+    font-family: Centrale Sans Light;
+    src: url('../fonts/Centrale Sans Light.otf');
+}
+
+@font-face {
+    font-family: Fremont-Regular;
+    src: url('../fonts/Fremont-Regular.ttf');
+}
+
+@font-face {
+    font-family: SourceSansPro-Regular;
+    src: url('../fonts/SourceSansPro-Regular.otf');
+}
+
+#skills_content {
+	padding-top: 3.3%;
+}
+
+#icon {
+	background: url('../images/ui/skills_icon.png') no-repeat center center;
+	height: 30%;
+	margin-left: 9.9%;
+	margin-top: 7%;
+	position: absolute;
+	width: 15%;
+}
+
+#name {
+	font-family: Fremont-Regular;
+	font-size: 25pt;
+	height: 5%;
+	margin-left: 8.4%;
+	margin-top: 20.9%;
+	position: absolute;
+	width: 18%;
+}
+
+#divider {
+	height: 5%;
+	margin-left: 9.9%;
+	margin-top: 24.4%;
+	position: absolute;
+	width: 15%;
+}
+
+#description {
+	height: 20%;
+	margin-left: 9.9%;
+	margin-top: 26.9%;
+	position: absolute;
+	width: 15%;
+}
+
+#card_layout {
+	height: 69.8%;
+	margin-left: 34.25%;
+	margin-top: 5.05%;
+	position: absolute;
+	width: 26%;
+}
+
+#default_description {
+	height: 69.8%;
+	margin-left: 65%;
+	margin-top: 5.05%;
+	padding-right: 5%;
+	position: absolute;
+	width: 22.45%;
+}
+
+#layout_description {
+	background-color: white;
+	height: 69.8%;
+	margin-left: 65%;
+	margin-top: 5.05%;
+	padding-right: 5%;
+	position: absolute;
+	width: 22.45%;
+}
+
+#skill_name {
+	height: 2.8%;
+	margin-left: 49%;
+	margin-top: 6%;
+	position: absolute;
+	width: 10.8%;
+}
+
+#skill_type {
+	height: 2.3%;
+	margin-left: 49%;
+	margin-top: 7.4%;
+	position: absolute;
+	width: 7.4%;
+}
+
+#action_type {
+	height: 2.3%;
+	margin-left: 56.75%;
+	margin-top: 7.3%;
+	position: absolute;
+	width: 3.05%;
+}
+
+#profession_icon {
+	height: 12.2%;
+	margin-left: 36.8%;
+	margin-top: 8.9%;
+	position: absolute;
+	width: 5%;
+}
+
+#attribute {
+	height: 5%;
+	margin-left: 36.8%;
+	margin-top: 15%;
+	position: absolute;
+	width: 5%;
+}
+
+#resource_cost {
+	height: 8%;
+	margin-left: 36.8%;
+	margin-top: 18.8%;
+	position: absolute;
+	width: 5%;
+}
+
+#recharge_time {
+	height: 3%;
+	margin-left: 36.8%;
+	margin-top: 23.05%;
+	position: absolute;
+	width: 5%;
+}
+
+#skill_icon {
+	height: 29.8%;
+	margin-left: 43.925%;
+	margin-top: 10%;
+	position: absolute;
+	width: 14.59%;
+}
+
+#arrow {
+	height: 3.8%;
+	margin-left: 55.5%;
+	margin-top: 10.1%;
+	position: absolute;
+	width: 2.9%;
+}
+
+#activation_rank {
+	height: 5.4%;
+	margin-left: 53.75%;
+	margin-top: 23%;
+	position: absolute;
+	width: 5.61%;
+}
+
+#skill_description {
+	height: 23.7%;
+	margin-left: 35.8%;
+	margin-top: 26.2%;
+	position: absolute;
+	width: 18%;
+}
+
+#scaling {
+	height: 23.7%;
+	margin-left: 54%;
+	margin-top: 26.2%;
+	position: absolute;
+	width: 4.5%;
+}

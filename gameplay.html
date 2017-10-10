@@ -1,289 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+		<title>Guild Wars: Tabletop</title>
 
-    <title>Guild Wars: Tabletop</title>
+		<!-- CSS -->
+		<link href="css/stylesheet.css" rel="stylesheet">
+		<link href="css/gameplay.css" rel="stylesheet">
+		
+		<!-- JavaScript -->
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/gameplay.js"></script>
+	</head>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom CSS for the 'Thumbnail Gallery' Template -->
-    <link href="css/thumbnail-gallery.css" rel="stylesheet">
-	
-	<link href="lightbox2-master\src\css\lightbox.css" rel="stylesheet">
-	
-	<script src="lightbox2-master\dist\js\lightbox-plus-jquery.js"></script>
-	
-	<script>
-		$(document).ready(function() {
-			$('#getting_started').hide();
-			$('#equipment').hide();
-			$('#combat').hide();
-			$('#leveling_up').hide();
+	<body>	
+		<div id="all">	
+			<!-- Menu Bar -->
+			<div id="main">
+											<div id="main_title">												Guild Wars: Tabletop	</div>
+				<a href="index.html">		<div id="main_about" 		class="clickable main_unselected">		About					</div></a>
+				<a href="professions.html">	<div id="main_professions" 	class="clickable main_unselected">		Professions				</div></a>
+				<a href="skills.html">		<div id="main_skills" 		class="clickable main_unselected">		Skills					</div></a>
+											<div id="main_gameplay" 	class="main_selected">					Gameplay				</div>
+				<a href="downloads.html">	<div id="main_downloads" 	class="clickable main_unselected">		Downloads				</div></a>
+				<a href="contact.html">		<div id="main_contact" 		class="clickable main_unselected">		Contact					</div></a>
+			</div> 
+			
+			<!-- Content -->
+			<div id="gameplay_content" style="height: 100%; width: 100%; overflow: hidden;">
+				<!-- Overview -->
+				<div id="icon">
+				</div>
+				<div id="name" align="middle">
+					GAMEPLAY
+				</div>
+				<div id="divider" align="middle">
+					<img src="images/ui/divider.png" style="height: 55%; width: 75%;"></img>
+				</div>
+				<div id="description">
+					Everything listed in this section are guidelines on how to implement GW systems into DnD. Feel free to make up your own rules as you see fit!
+				</div>
 				
-			$('.clickable').hover(function() {
-				$(this).css('cursor','pointer');
-				$(this).css('color', 'white');
-				$(this).css('background-color', '#333333');
-			},
-			function() {
-				$(this).css('color', '#222222');
-				$(this).css('background-color', 'white');
-			});
-			
-			$('.aoe').hover(function() {
-				$(this).css('cursor','pointer');
-				$(this).css('color', 'white');
-				$(this).css('background-color', '#999999');
-			},
-			function() {
-				$(this).css('color', '#222222');
-				$(this).css('background-color', 'white');
-			});
-			
-			$('#getting_started_tab').click(function() {
-				$('#getting_started').show();
-				$('#equipment').hide();
-				$('#areas_of_effect').hide();
-				$('#combat').hide();
-				$('#leveling_up').hide();
-			});
-			$('#equipment').click(function() {
-				$('#equipment').show();
-				$('#getting_started').hide();
-				$('#areas_of_effect').hide();
-				$('#combat').hide();
-				$('#leveling_up').hide();		
-			});
-			$('#areas_of_effect_tab').click(function() {
-				$('#areas_of_effect').show();
-				$('#getting_started').hide();
-				$('#equipment').hide();
-				$('#combat').hide();
-				$('#leveling_up').hide();
-			});
-			$('#combat_tab').click(function() {
-				$('#combat').show();
-				$('#getting_started').hide();
-				$('#equipment').hide();
-				$('#areas_of_effect').hide();
-				$('#leveling_up').hide();			
-			});
-			$('#leveling_up_tab').click(function() {
-				$('#leveling_up').show();
-				$('#getting_started').hide();
-				$('#equipment').hide();
-				$('#areas_of_effect').hide();
-				$('#combat').hide();
-			});
-			
-			$('#melee').hover(function() {
-				$('#aoe').html('<img src="images/aoe/melee.png" style="height: 100%"></img>');
-				$('#aoe_description').html('<font style="font-family: Centrale Sans Light; font-size: 18pt; font-weight: bold;">Within 5 feet<br>(1 square away)</font>');
-			},
-			function() {
-			});
-			$('#adjacent_to_self').hover(function() {
-				$('#aoe').html('<img src="images/aoe/adjacent_to_self.png" style="height: 100%"></img>');
-				$('#aoe_description').html('<font style="font-family: Centrale Sans Light; font-size: 18pt; font-weight: bold;">Within 10 feet<br>(2 squares away)</font>');
-			},
-			function() {
-			});
-			$('#adjacent_to_target').hover(function() {
-				$('#aoe').html('<img src="images/aoe/adjacent_to_target.png" style="height: 100%"></img>');
-				$('#aoe_description').html('<font style="font-family: Centrale Sans Light; font-size: 18pt; font-weight: bold;">Within 5 feet<br>(1 square away)</font>');
-			},
-			function() {
-			});
-			$('#nearby').hover(function() {
-				$('#aoe').html('<img src="images/aoe/nearby.png" style="height: 100%"></img>');
-				$('#aoe_description').html('<font style="font-family: Centrale Sans Light; font-size: 18pt; font-weight: bold;">Within 15 feet<br>(3 squares away)</font>');
-			},
-			function() {
-			});
-			$('#in_the_area').hover(function() {
-				$('#aoe').html('<img src="images/aoe/in_the_area.png" style="height: 100%"></img>');
-				$('#aoe_description').html('<font style="font-family: Centrale Sans Light; font-size: 18pt; font-weight: bold;">Within 20 feet<br>(4 squares away)</font>');
-			},
-			function() {
-			});
-			$('#earshot').hover(function() {
-				$('#aoe').html('<img src="images/aoe/earshot.png" style="height: 100%"></img>');
-				$('#aoe_description').html('<font style="font-family: Centrale Sans Light; font-size: 18pt; font-weight: bold;">Within 60 feet<br>(12 squares away)</font>');
-			},
-			function() {
-			});
-			$('#spirit').hover(function() {
-				$('#aoe').html('<img src="images/aoe/spirit.png" style="height: 100%"></img>');
-				$('#aoe_description').html('<font style="font-family: Centrale Sans Light; font-size: 18pt; font-weight: bold;">Within 160 feet<br>(32 squares away)</font>');
-			},
-			function() {
-			});
-			$('#party').hover(function() {
-				$('#aoe').html('<img src="images/aoe/party.png" style="height: 100%"></img>');
-				$('#aoe_description').html('<font style="font-family: Centrale Sans Light; font-size: 18pt; font-weight: bold;">Within 270 feet<br>(54 squares away)</font>');
-			},
-			function() {
-			});
-		});
-	</script>
-</head>
-
-<body>
-   <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation" style="font-family: Centrale Sans Light; font-size: 14pt;">
-        <div class="container" style="width:100%; padding-left: 2%;">
-            <div class="navbar-header">
-                <a href="index.html" class="navbar-brand" href="index.php" style="color: white;">Guild Wars: Tabletop</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse" align="right" style="float: right;">
-                <ul class="nav navbar-nav">
-                    <li><a href="index.html">About</a>
-                    </li>
-                    <li><a href="professions.html">Professions</a>
-                    </li>
-                    <li><a href="skills.html">Skills</a>
-                    </li>
-                    <li style="background-color: #363636;"><a><font color="white">Gameplay</font></a>
-                    </li>
-                    <li><a href="downloads.html">Downloads</a>
-                    </li>
-                    <li><a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-	
-	<div id="gameplay_page" style="height: 100%; width: 100%; overflow: hidden;">
-		<!-- Overview -->
-		<div id="icon" style="margin-left: 9.9%; margin-top: 7%; background: url('images/gameplay_icon.png') no-repeat center center; height: 30%; width: 15%; position: absolute;" align="middle">
-		</div>
-		<div id="name" style="margin-left: 8.4%; margin-top: 20.9%; height: 5%; width: 18%; position: absolute; font-family: Fremont-Regular; font-size: 25pt; color: #222222;" align="middle">
-			GAMEPLAY
-		</div>
-		<div id="divider" style="margin-left: 9.9%; margin-top: 24.4%; height: 5%; width: 15%; position: absolute;" align="middle">
-			<img src="images/ui/divider.png" style="height: 55%; width: 75%;"></img>
-		</div>
-		
-		<!-- Content -->
-		<div style="color: #222222; margin-left: 8.4%; height: 100%; width: 18%; position: absolute;" align="middle">
-			<div id="getting_started_tab" class="clickable" style="margin-top: 150%; font-family: Centrale Sans Light; font-size: 14pt; padding-left: 6%; width: 100%; height: 5%; border: 0.25pt solid white;" align="left">
-				1. &nbsp;GETTING STARTED
-			</div>
-			<div id="equipment_tab" class="clickable" style="font-family: Centrale Sans Light; font-size: 14pt; padding-left: 6%; width: 100%; height: 5%; border: 0.25pt solid white;" align="left">
-				2. EQUIPMENT
-			</div>
-			<div id="areas_of_effect_tab" class="clickable" style="background-color: #222222; color: white; font-family: Centrale Sans Light; font-size: 14pt; padding-left: 6%; width: 100%; height: 5%; border: 0.25pt solid white;" align="left">
-				3. AREAS OF EFFECT
-			</div>
-			<div id="combat_tab" class="clickable" style="font-family: Centrale Sans Light; font-size: 14pt; padding-left: 6%; width: 100%; height: 5%; border: 0.25pt solid white;" align="left">
-				4. COMBAT
-			</div>
-			<div id="leveling_up_tab" class="clickable" style="font-family: Centrale Sans Light; font-size: 14pt; padding-left: 6%; width: 100%; height: 5%; border: 0.25pt solid white;" align="left">
-				5. LEVELING UP
-			</div>
-			
-			<!--
-			<img src="images/icons/skills_icon.png" style="margin-top: 30%; width: 60%;"></img>
-			<div id="tab_1" class="clickable" style="margin-top: 42%; font-family: Centrale Sans Light; font-size: 18pt; color: white; background-color: #444444; padding-left: 6%; width: 100%; height: 5%; border: 0.25pt solid white;" align="left">
-				1. &nbsp;EQUIPPING SKILLS
-			</div>
-			<div id="tab_2" class="clickable" style="font-family: Centrale Sans Light; font-size: 18pt; background-color: #222222; padding-left: 6%; width: 100%; height: 5%; border: 0.25pt solid white;" align="left">
-				2. HOW TO READ
-			</div>
-			<div id="tab_3" class="clickable" style="font-family: Centrale Sans Light; font-size: 18pt; background-color: #222222; padding-left: 6%; width: 100%; height: 5%; border: 0.25pt solid white;" align="left">
-				3. SKILL TYPES
-			</div>
-			<div id="tab_4" class="clickable" style="font-family: Centrale Sans Light; font-size: 18pt; background-color: #222222; padding-left: 6%; width: 100%; height: 5%; border: 0.25pt solid white;" align="left">
-				4. RESOURCES
-			</div>
-			<div id="tab_5" class="clickable" style="font-family: Centrale Sans Light; font-size: 18pt; background-color: #222222; padding-left: 6%; width: 100%; height: 5%; border: 0.25pt solid white;" align="left">
-				5. ATTRIBUTES
-			</div>
-			<div id="tab_6" class="clickable" style="font-family: Centrale Sans Light; font-size: 18pt; background-color: #222222; padding-left: 6%; width: 100%; height: 5%; border: 0.25pt solid white;" align="left">
-				6. PRIORITY
-			</div>
-			<div id="tab_7" class="clickable" style="font-family: Centrale Sans Light; font-size: 18pt; background-color: #222222; padding-left: 6%; width: 100%; height: 5%; border: 0.25pt solid white;" align="left">
-				7. GUIDELINES
-			</div>
-			-->
-		</div>
-		
-		<!-- Getting Started -->
-		<div id="getting_started" class="panel" style="color: #222222; margin-left: 32.5%; margin-top: 5%; height: 70%; width: 67.5%; position: absolute;">
-			<font style="font-family: Fremont-Regular; font-size: 25pt;">GETTING STARTED</font>
-			<div id="armor" class="equipment" style="margin-left: -2.5%; margin-top: 18.5%; height: 6.5%; width: 9%;" align="middle">
-				<font style="font-family: Centrale Sans Light; font-size: 18pt; font-weight: bold;">Armor</font>
-			</div>
-			<div id="weapons" class="equipment" style="background-color: #999999; color: white; margin-top: -3.5%; margin-left: 6.5%; height: 6.5%; width: 17%;" align="middle">
-				<font style="font-family: Centrale Sans Light; font-size: 18pt; font-weight: bold;">Weapons</font>
+				<div id="character" class="clickable">I. Character</div>
+				<div id="build" class="clickable">II. Build</div>
+				<div id="combat" class="clickable">III. Combat</div>
+				<div style="background-color: #222222; margin-left: 32.55%; margin-top: 7.05%; height: 0.3%; width: 59.9%; position: absolute;"></div>
+				
+				<div id="character_options">
+					<div id="character_one" class="" style="font-size: 14pt; margin-left: 32.55%; margin-top: 8.89%; width: 18%; padding: 5px; position: absolute; font-weight: bold;">Choosing Professions</div> <img src="images/ui/gameplay_arrow.png" style=" margin-top: 9.4%; height: 1.8%; margin-left: 48.5%; position: absolute;"></img><br>
+					<div id="character_two" class="clickable gameplay_submenu" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 9.79%; width: 18%; padding: 5px; position: absolute;">Starter Armor</div><br>
+					<div id="character_three" class="clickable gameplay_submenu" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 10.68%; width: 18%; padding: 5px; position: absolute;">Starter Weapons</div><br>
+					<div id="character_four" class="clickable gameplay_submenu" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 11.58%; width: 18%; padding: 5px; position: absolute;">Starter Skills</div><br>
+					<div id="character_five" class="clickable gameplay_submenu" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 12.48%; width: 18%; padding: 5px; position: absolute;">Attributes</div><br>
+					<div id="character_six" class="clickable gameplay_submenu" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 13.38%; width: 18%; padding: 5px; position: absolute;">Leveling Up</div><br>
+				</div>
+				<div id="build_options">
+					<div id="build_one" class="clickable" style="font-size: 14pt; margin-left: 32.55%; margin-top: 8.89%; width: 18%; padding: 5px; position: absolute; font-weight: bold;">Armor</div> <img src="images/ui/gameplay_arrow.png" style=" margin-top: 9.4%; height: 1.8%; margin-left: 48.5%; position: absolute;"></img><br>
+					<div id="build_two" class="clickable" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 9.79%; width: 18%; padding: 5px; position: absolute;">Insignias</div><br>
+					<div id="build_three" class="clickable" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 10.68%; width: 18%; padding: 5px; position: absolute;">Runes</div><br>
+					<div id="build_four" class="clickable" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 11.58%; width: 18%; padding: 5px; position: absolute;">Weapons</div><br>
+					<div id="build_five" class="clickable" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 12.48%; width: 18%; padding: 5px; position: absolute;">Upgrade Components</div><br>
+					<div id="build_six" class="clickable" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 13.38%; width: 18%; padding: 5px; position: absolute;">Inscriptions</div><br>
+					<div id="build_seven" class="clickable" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 14.28%; width: 18%; padding: 5px; position: absolute;">Skills</div>
+				</div>
+				<div id="combat_options">
+					<div id="combat_one" class="clickable" style="font-size: 14pt; margin-left: 32.55%; margin-top: 8.89%; width: 18%; padding: 5px; position: absolute; font-weight: bold;">Attack Layers</div> <img src="images/ui/gameplay_arrow.png" style=" margin-top: 9.4%; height: 1.8%; margin-left: 48.5%; position: absolute;"></img><br>
+					<div id="combat_two" class="clickable" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 9.79%; width: 18%; padding: 5px; position: absolute;">Conditions</div><br>
+					<div id="combat_three" class="clickable" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 10.68%; width: 18%; padding: 5px; position: absolute;">Morale Boosts</div><br>
+					<div id="combat_four" class="clickable" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 11.58%; width: 18%; padding: 5px; position: absolute;">Death Penalty</div><br>
+					<div id="combat_five" class="clickable" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 12.48%; width: 18%; padding: 5px; position: absolute;">Areas of Effect</div><br>
+					<div id="combat_six" class="clickable" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 13.38%; width: 18%; padding: 5px; position: absolute;">Weapon Damage</div><br>
+					<div id="combat_seven" class="clickable" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 14.28%; width: 18%; padding: 5px; position: absolute;">Skill Damage</div>
+					<div id="combat_eight" class="clickable" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 16.48%; width: 18%; padding: 5px; position: absolute;">Rewards and Treasure</div>
+					<div id="combat_nine" class="clickable" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 18.68%; width: 18%; padding: 5px; position: absolute;">Critical Chance</div>
+				</div>
+				
+				<div id="choosing_professions" style="margin-top: 1.5%; margin-left: 54.5%; position: absolute; width: 32.95%; height: 50%; padding-right: 5%;">
+					<font style="font-size: 18pt; font-family: Fremont-Regular;">Choosing Professions</font><br>
+					<br>
+					A character's primary profession (or primary for short) determines that character's appearance, the armor and runes they can use, and their available skills and attributes. For example, a Necromancer cannot wear the same armor that a Warrior can, and vice versa. Also, unique to each profession is a primary attribute, which is only available to characters who choose that primary. A character's primary profession is the only choice that cannot be changed once that character has been created.<br>
+					<br>
+					A character's secondary profession (or secondary) provides them with a second set of attributes and skills to complement the first. However, a character does not have access to their secondary profession's primary attribute, severely limiting the use of skills linked to that attribute (although characters may still obtain skills from the primary attribute of their secondary.) In addition, a character cannot use runes from their secondary profession, so their secondary attributes cannot normally increase beyond a rank of 12.
+				</div>
+				<div id="starter_armor" style="margin-top: 1.5%; margin-left: 54.5%; position: absolute; width: 32.95%; height: 50%; padding-right: 5%;">
+					<font style="font-size: 18pt; font-family: Fremont-Regular;">Starter Armor</font><br>
+					<br>
+					A character's primary profession (or primary for short) determines that character's appearance, the armor and runes they can use, and their available skills and attributes. For example, a Necromancer cannot wear the same armor that a Warrior can, and vice versa. Also, unique to each profession is a primary attribute, which is only available to characters who choose that primary. A character's primary profession is the only choice that cannot be changed once that character has been created.<br>
+					<br>
+					A character's secondary profession (or secondary) provides them with a second set of attributes and skills to complement the first. However, a character does not have access to their secondary profession's primary attribute, severely limiting the use of skills linked to that attribute (although characters may still obtain skills from the primary attribute of their secondary.) In addition, a character cannot use runes from their secondary profession, so their secondary attributes cannot normally increase beyond a rank of 12.
+				</div>
+				<!--
+				<div class="clickable gameplay_menu" style="font-size: 14pt; margin-left: 32.55%; margin-top: 13.72%; width: 17%; padding: 5px; position: absolute;">Runes</div><br>
+				<div class="clickable gameplay_menu" style="font-size: 14pt; margin-left: 32.55%; margin-top: 14.82%; width: 17%; padding: 5px; position: absolute;">Sigils</div><br>
+				<div class="clickable gameplay_menu" style="font-size: 14pt; margin-left: 32.55%; margin-top: 15.92%; width: 17%; padding: 5px; position: absolute;">Skills</div><br>
+				<div class="clickable gameplay_menu" style="font-size: 14pt; margin-left: 32.55%; margin-top: 17.02%; width: 17%; padding: 5px; position: absolute;">Attack Layers</div><br>
+				<div class="clickable gameplay_menu" style="font-size: 14pt; margin-left: 32.55%; margin-top: 18.12%; width: 17%; padding: 5px; position: absolute;">Area of Effect</div><br>
+				<div class="clickable gameplay_menu" style="font-size: 14pt; margin-left: 32.55%; margin-top: 19.22%; width: 17%; padding: 5px; position: absolute;">Damage</div><br>
+				<div class="clickable gameplay_menu" style="font-size: 14pt; margin-left: 32.55%; margin-top: 20.32%; width: 17%; padding: 5px; position: absolute;">Leveling Up</div><br>
+				<div class="clickable gameplay_menu" style="font-size: 14pt; margin-left: 32.55%; margin-top: 21.42%; width: 17%; padding: 5px; position: absolute;">Other</div><br>
+				-->
 			</div>
 		</div>
-		
-		<!-- Equipment -->
-		<div id="equipment" class="panel" style="margin-left: 32.5%; margin-top: 3.75%; height: 74%; width: 67.5%; position: absolute;">
-			<font style="font-family: Fremont-Regular; font-size: 25pt;">EQUIPMENT</font>
-		</div>
-		
-		<!-- Areas of Effect -->
-		<div id="areas_of_effect" class="panel" style="margin-left: 32.5%; margin-top: 3.75%; height: 74%; width: 67.5%; position: absolute;">
-			<font style="font-family: Fremont-Regular; font-size: 25pt;">AREAS OF EFFECT</font>
-			<div id="aoe" style="margin-left: 5%; margin-top: 2%; height: 80%; width: 45%;" align="middle">
-				<img src="images/aoe/adjacent_to_self.png" style="height: 100%"></img>
-			</div>
-			<div id="aoe_description" style="margin-left: 75%; margin-top: -25.41%; height: 18%; width: 20%;" align="middle">
-			</div>
-			<div id="melee" class="aoe" style="margin-left: -2.5%; margin-top: 18.5%; height: 6.5%; width: 9%;" align="middle">
-				<font style="font-family: Centrale Sans Light; font-size: 18pt; font-weight: bold;">Melee</font>
-			</div>
-			<div id="adjacent_to_self" class="aoe" style="background-color: #999999; color: white; margin-top: -3.5%; margin-left: 6.5%; height: 6.5%; width: 17%;" align="middle">
-				<font style="font-family: Centrale Sans Light; font-size: 18pt; font-weight: bold;">Adjacent (Self)</font>
-			</div>
-			<div id="adjacent_to_target" class="aoe" style="margin-top: -3.5%; margin-left: 23.5%; height: 6.5%; width: 20%;" align="middle">
-				<font style="font-family: Centrale Sans Light; font-size: 18pt; font-weight: bold;">Adjacent (Target)</font>
-			</div>
-			<div id="nearby" class="aoe" style="margin-top: -3.5%; margin-left: 43.5%; height: 6.5%; width: 9%;" align="middle">
-				<font style="font-family: Centrale Sans Light; font-size: 18pt; font-weight: bold;">Nearby</font>
-			</div>
-			<div id="in_the_area" class="aoe" style="margin-top: -3.5%; margin-left: 52.5%; height: 6.5%; width: 14%;" align="middle">
-				<font style="font-family: Centrale Sans Light; font-size: 18pt; font-weight: bold;">In The Area</font>
-			</div>
-			<div id="earshot" class="aoe" style=" margin-top: -3.5%; margin-left: 66.5%; height: 6.5%; width: 10%;" align="middle">
-				<font style="font-family: Centrale Sans Light; font-size: 18pt; font-weight: bold;">Earshot</font>
-			</div>
-			<div id="spirit" class="aoe" style="margin-top: -3.5%; margin-left: 76.5%; height: 6.5%; width: 8%;" align="middle">
-				<font style="font-family: Centrale Sans Light; font-size: 18pt; font-weight: bold;">Spirit</font>
-			</div>
-			<div id="party" class="aoe" style="margin-top: -3.55%; margin-left: 84.5%; height: 6.5%; width: 8%;" align="middle">
-				<font style="font-family: Centrale Sans Light; font-size: 18pt; font-weight: bold;">Party</font>
-			</div>
-		</div>
-		
-		<!-- Combat -->
-		<div id="combat" class="panel" style="margin-left: 32.5%; margin-top: 5%; height: 70%; width: 67.5%; position: absolute;">
-			<font style="font-family: Fremont-Regular; font-size: 25pt;">COMBAT</font>
-		</div>
-		
-		<!-- Leveling Up -->
-		<div id="leveling_up" class="panel" style="margin-left: 32.5%; margin-top: 5%; height: 70%; width: 67.5%; position: absolute;">
-			<font style="font-family: Fremont-Regular; font-size: 25pt;">LEVELING UP</font>
-		</div>
-	</div>
-    <!-- /.container -->
-
-    <!-- JavaScript -->
-    <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/bootstrap.js"></script>	
-
-</body>
-
+	</body>
 </html>

@@ -1,0 +1,101 @@
+/*!
+ * Bootstrap v3.1.0 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+
+@font-face {
+    font-family: Centrale Sans Light;
+    src: url('../fonts/Centrale Sans Light.otf');
+}
+
+@font-face {
+    font-family: Fremont-Regular;
+    src: url('../fonts/Fremont-Regular.ttf');
+}
+
+@font-face {
+    font-family: SourceSansPro-Regular;
+    src: url('../fonts/SourceSansPro-Regular.otf');
+}
+
+html {
+	height: 100%;
+	-webkit-text-size-adjust: 100%;
+		-ms-text-size-adjust: 100%;
+}
+body {
+	color: #222222;
+	font-family: Centrale Sans Light;
+	font-size: 12pt;
+	height: 100%;
+	margin: 0;
+	overflow-y: hidden;
+}
+
+#all {
+	height: 100%;
+	width: 100%;
+}
+
+a {
+	color: #999999;
+	text-decoration: none;
+}
+
+#main {
+	background-color: #222222;
+	font-size: 14pt;
+	height: 6.7%;
+	position: absolute;
+	width: 100%;
+}
+
+#main_title {
+	color: white;
+	height: 46%;
+	left: 1%;
+	padding: 0.9%;
+	position: absolute;
+}
+
+#main_about {
+	right: 36.75%;
+}
+
+#main_professions {
+	right: 28.25%;
+}
+
+#main_skills {
+	right: 23.5%;
+}
+
+#main_gameplay {
+	right: 15.75%;
+}
+
+#main_downloads {
+	right: 7.4%;
+}
+
+#main_contact {
+	right: 1%;
+}
+
+.main_selected {
+	background-color: #363636;
+	color: white;
+	height: 71%;
+	padding: 0.9% 1% 0% 1%;
+	position: absolute;
+}
+
+.main_unselected {
+	color: #999999;
+	height: 71%;
+	padding: 0.9% 1% 0% 1%;
+	position: absolute;
+}
