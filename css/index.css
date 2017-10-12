@@ -22,14 +22,18 @@
 }
 
 #index_content {
-	height: 62.5%;
+	background-color: #222222;
+	box-shadow: 0 0 5px 10px #222222;
+	height: 61%;
 	margin-left: 12.8%;
 	margin-top: 10.4%;
+	opacity: 0.75;
 	position: absolute;
 	width: 34.65%;
 }
 
 #index_header {
+	color: #fde474;
 	font-size: 16pt;
 	font-weight: bold;
 	padding: 10px;

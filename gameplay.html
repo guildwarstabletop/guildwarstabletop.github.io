@@ -51,75 +51,197 @@
 				<div id="combat_tab" class="clickable">III. Combat</div>
 				<div style="background-color: #222222; margin-left: 32.55%; margin-top: 7.05%; height: 0.3%; width: 59.9%; position: absolute;"></div>
 				
-				<div id="character_options">
-					<div id="character_one" class="" style="font-size: 16pt; margin-left: 32.55%; margin-top: 8.89%; width: 18%; padding: 5px; position: absolute; font-weight: bold;">Choosing Professions</div> <img src="images/ui/gameplay_arrow.png" style=" margin-top: 9.4%; height: 1.8%; margin-left: 48.5%; position: absolute;"></img><br>
-					<div id="character_two" class="clickable gameplay_submenu" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 9.79%; width: 18%; padding: 5px; position: absolute;">Starter Armor</div><br>
-					<div id="character_three" class="clickable gameplay_submenu" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 10.68%; width: 18%; padding: 5px; position: absolute;">Starter Weapons</div><br>
-					<div id="character_four" class="clickable gameplay_submenu" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 11.58%; width: 18%; padding: 5px; position: absolute;">Starter Skills</div><br>
-					<div id="character_five" class="clickable gameplay_submenu" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 12.48%; width: 18%; padding: 5px; position: absolute;">Attributes</div><br>
-					<div id="character_six" class="clickable gameplay_submenu" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 13.38%; width: 18%; padding: 5px; position: absolute;">Leveling Up</div><br>
-				</div>
-				<div id="build_options">
-					<div id="build_one" class="clickable" style="font-size: 16pt; margin-left: 32.55%; margin-top: 8.89%; width: 18%; padding: 5px; position: absolute; font-weight: bold;">Armor</div> <img src="images/ui/gameplay_arrow.png" style=" margin-top: 9.4%; height: 1.8%; margin-left: 48.5%; position: absolute;"></img><br>
-					<div id="build_two" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 9.79%; width: 18%; padding: 5px; position: absolute;">Insignias</div><br>
-					<div id="build_three" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 10.68%; width: 18%; padding: 5px; position: absolute;">Runes</div><br>
-					<div id="build_four" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 11.58%; width: 18%; padding: 5px; position: absolute;">Weapons</div><br>
-					<div id="build_five" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 12.48%; width: 18%; padding: 5px; position: absolute;">Upgrade Components</div><br>
-					<div id="build_six" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 13.38%; width: 18%; padding: 5px; position: absolute;">Inscriptions</div><br>
-					<div id="build_seven" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 14.28%; width: 18%; padding: 5px; position: absolute;">Skills</div>
-				</div>
-				<div id="combat_options">
-					<div id="combat_one" class="clickable" style="font-size: 16pt; margin-left: 32.55%; margin-top: 8.89%; width: 18%; padding: 5px; position: absolute; font-weight: bold;">Attack Layers</div> <img src="images/ui/gameplay_arrow.png" style=" margin-top: 9.4%; height: 1.8%; margin-left: 48.5%; position: absolute;"></img><br>
-					<div id="combat_two" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 9.79%; width: 18%; padding: 5px; position: absolute;">Conditions</div><br>
-					<div id="combat_three" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 10.68%; width: 18%; padding: 5px; position: absolute;">Morale Boosts</div><br>
-					<div id="combat_four" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 11.58%; width: 18%; padding: 5px; position: absolute;">Death Penalty</div><br>
-					<div id="combat_five" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 12.48%; width: 18%; padding: 5px; position: absolute;">Areas of Effect</div><br>
-					<div id="combat_six" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 13.38%; width: 18%; padding: 5px; position: absolute;">Weapon Damage</div><br>
-					<div id="combat_seven" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 14.28%; width: 18%; padding: 5px; position: absolute;">Skill Damage</div>
-					<div id="combat_eight" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 16.48%; width: 18%; padding: 5px; position: absolute;">Rewards and Treasure</div>
-					<div id="combat_nine" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 18.68%; width: 18%; padding: 5px; position: absolute;">Critical Chance</div>
-				</div>
+				<div id="character">
+					<div id="choosing_professions_tab" class="clickable" style="font-size: 16pt; margin-left: 32.55%; margin-top: 8.89%; width: 18%; padding: 5px; position: absolute; font-weight: bold;">Choosing Professions</div><br>
+					<div id="starter_armor_tab" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 9.79%; width: 18%; padding: 5px; position: absolute;">Starter Armor</div><br>
+					<div id="starter_weapons_tab" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 10.68%; width: 18%; padding: 5px; position: absolute;">Starter Weapons</div><br>
+					<div id="starter_skills_tab" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 11.58%; width: 18%; padding: 5px; position: absolute;">Starter Skills</div><br>
+					<div id="attributes_tab" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 12.48%; width: 18%; padding: 5px; position: absolute;">Attributes</div><br>
+					<div id="leveling_up_tab" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 13.38%; width: 18%; padding: 5px; position: absolute;">Leveling Up</div><br>
 				
-				<div id="choosing_professions" style="margin-top: 1.5%; margin-left: 54.5%; position: absolute; width: 32.95%; height: 50%; padding-right: 5%;">
-					<font style="font-size: 20pt; font-family: Fremont-Regular;">Choosing Professions</font><br>
-					<br>
-					A character's primary profession (or primary for short) determines that character's appearance, the armor and runes they can use, and their available skills and attributes. For example, a Necromancer cannot wear the same armor that a Warrior can, and vice versa. Also, unique to each profession is a primary attribute, which is only available to characters who choose that primary. A character's primary profession is the only choice that cannot be changed once that character has been created.<br>
-					<br>
-					A character's secondary profession (or secondary) provides them with a second set of attributes and skills to complement the first. However, a character does not have access to their secondary profession's primary attribute, severely limiting the use of skills linked to that attribute (although characters may still obtain skills from the primary attribute of their secondary.) In addition, a character cannot use runes from their secondary profession, so their secondary attributes cannot normally increase beyond a rank of 12.
+					<img id="character_arrow" src="images/ui/gameplay_arrow.png" style=" margin-top: 2.1%; height: 1.8%; margin-left: 50%; position: absolute;"></img>
+				
+					<div id="choosing_professions" style="margin-top: 1.5%; margin-left: 54.5%; position: absolute; width: 32.95%; height: 50%; padding-right: 5%;">
+						<font style="font-size: 20pt; font-family: Fremont-Regular;">Choosing Professions</font><br>
+						<br>
+						A character's primary profession (or primary for short) determines that character's appearance, the armor and runes they can use, and their available skills and attributes. For example, a Necromancer cannot wear the same armor that a Warrior can, and vice versa. Also, unique to each profession is a primary attribute, which is only available to characters who choose that primary. A character's primary profession is the only choice that cannot be changed once that character has been created.<br>
+						<br>
+						A character's secondary profession (or secondary) provides them with a second set of attributes and skills to complement the first. However, a character does not have access to their secondary profession's primary attribute, severely limiting the use of skills linked to that attribute (although characters may still obtain skills from the primary attribute of their secondary.) In addition, a character cannot use runes from their secondary profession, so their secondary attributes cannot normally increase beyond a rank of 12.
+					</div>
+					<div id="starter_armor" style="margin-top: 1.5%; margin-left: 54.5%; position: absolute; width: 32.95%; height: 50%; padding-right: 5%;">
+						<font style="font-size: 20pt; font-family: Fremont-Regular;">Starter Armor</font><br>
+						<br>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultrices enim vel consequat elementum. Integer tristique vitae nunc non feugiat. Donec urna magna, mollis eu turpis non, euismod molestie metus. Vestibulum sollicitudin mauris vel augue sodales, at dapibus mauris dictum. Donec nulla nibh, convallis id sodales eu, hendrerit et est. Integer mattis urna et mauris volutpat molestie. Nam lacus nunc, tempus eu lectus ac, rhoncus pulvinar nulla.<br>
+						<br>
+						Nunc ac turpis dignissim justo pharetra tempus. Aenean vestibulum quam ac sodales sagittis. Donec rutrum, nisi sit amet placerat tempus, enim ipsum fringilla diam, vitae fermentum dolor diam sit amet quam. Ut vel orci vel lacus consequat condimentum vel at lacus. Donec vitae purus id lorem accumsan faucibus. Nullam at luctus lectus, eget placerat tellus. Duis tellus mi, tincidunt vel enim vestibulum, egestas consectetur ipsum. Donec tincidunt tellus a massa pellentesque ultricies. Fusce sodales neque sed porttitor finibus. Donec eget eros et lectus vehicula volutpat et in libero.
+					</div>
+					<div id="starter_weapons" style="margin-top: 1.5%; margin-left: 54.5%; position: absolute; width: 32.95%; height: 50%; padding-right: 5%;">
+						<font style="font-size: 20pt; font-family: Fremont-Regular;">Starter Weapons</font><br>
+						<br>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultrices enim vel consequat elementum. Integer tristique vitae nunc non feugiat. Donec urna magna, mollis eu turpis non, euismod molestie metus. Vestibulum sollicitudin mauris vel augue sodales, at dapibus mauris dictum. Donec nulla nibh, convallis id sodales eu, hendrerit et est. Integer mattis urna et mauris volutpat molestie. Nam lacus nunc, tempus eu lectus ac, rhoncus pulvinar nulla.<br>
+						<br>
+						Nunc ac turpis dignissim justo pharetra tempus. Aenean vestibulum quam ac sodales sagittis. Donec rutrum, nisi sit amet placerat tempus, enim ipsum fringilla diam, vitae fermentum dolor diam sit amet quam. Ut vel orci vel lacus consequat condimentum vel at lacus. Donec vitae purus id lorem accumsan faucibus. Nullam at luctus lectus, eget placerat tellus. Duis tellus mi, tincidunt vel enim vestibulum, egestas consectetur ipsum. Donec tincidunt tellus a massa pellentesque ultricies. Fusce sodales neque sed porttitor finibus. Donec eget eros et lectus vehicula volutpat et in libero.
+					</div>
+					<div id="starter_skills" style="margin-top: 1.5%; margin-left: 54.5%; position: absolute; width: 32.95%; height: 50%; padding-right: 5%;">
+						<font style="font-size: 20pt; font-family: Fremont-Regular;">Starter Skills</font><br>
+						<br>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultrices enim vel consequat elementum. Integer tristique vitae nunc non feugiat. Donec urna magna, mollis eu turpis non, euismod molestie metus. Vestibulum sollicitudin mauris vel augue sodales, at dapibus mauris dictum. Donec nulla nibh, convallis id sodales eu, hendrerit et est. Integer mattis urna et mauris volutpat molestie. Nam lacus nunc, tempus eu lectus ac, rhoncus pulvinar nulla.<br>
+						<br>
+						Nunc ac turpis dignissim justo pharetra tempus. Aenean vestibulum quam ac sodales sagittis. Donec rutrum, nisi sit amet placerat tempus, enim ipsum fringilla diam, vitae fermentum dolor diam sit amet quam. Ut vel orci vel lacus consequat condimentum vel at lacus. Donec vitae purus id lorem accumsan faucibus. Nullam at luctus lectus, eget placerat tellus. Duis tellus mi, tincidunt vel enim vestibulum, egestas consectetur ipsum. Donec tincidunt tellus a massa pellentesque ultricies. Fusce sodales neque sed porttitor finibus. Donec eget eros et lectus vehicula volutpat et in libero.
+					</div>
+					<div id="attributes" style="margin-top: 1.5%; margin-left: 54.5%; position: absolute; width: 32.95%; height: 50%; padding-right: 5%;">
+						<font style="font-size: 20pt; font-family: Fremont-Regular;">Attributes</font><br>
+						<br>
+						Attributes are the statistical descriptors for all creatures (including player characters) in Guild Wars. Most skills have an associated attribute that governs the effectiveness of that skill. Most weapons and offhands require a minimum investment in a specific attribute to function at their full capacity. Some attributes also have an inherent effect. The value of an attribute is known as "rank".<br>
+						<br>
+						Each profession has a primary attribute which also always has an inherent effect that is part of what "makes" the profession. One attribute from each profession is designated as its primary attribute and is only available to a character who takes it as their primary profession. Primary attributes tend to have fewer linked skills than secondary attributes.<br>
+						<br>
+						Secondary attributes are every other attribute. A character will have all secondary attributes of their primary and secondary professions. This means that every character can eventually gain access to any secondary attribute and its associated skills. A majority of secondary attributes have no inherent effect.
+					</div>
+					<div id="leveling_up" style="margin-top: 1.5%; margin-left: 54.5%; position: absolute; width: 32.95%; height: 50%; padding-right: 5%;">
+						<font style="font-size: 20pt; font-family: Fremont-Regular;">Leveling Up</font><br>
+						<br>
+						A character's primary profession (or primary for short) determines that character's appearance, the armor and runes they can use, and their available skills and attributes. For example, a Necromancer cannot wear the same armor that a Warrior can, and vice versa. Also, unique to each profession is a primary attribute, which is only available to characters who choose that primary. A character's primary profession is the only choice that cannot be changed once that character has been created.<br>
+						<br>
+						A character's secondary profession (or secondary) provides them with a second set of attributes and skills to complement the first. However, a character does not have access to their secondary profession's primary attribute, severely limiting the use of skills linked to that attribute (although characters may still obtain skills from the primary attribute of their secondary.) In addition, a character cannot use runes from their secondary profession, so their secondary attributes cannot normally increase beyond a rank of 12.
+					</div>
 				</div>
-				<div id="starter_armor" style="margin-top: 1.5%; margin-left: 54.5%; position: absolute; width: 32.95%; height: 50%; padding-right: 5%;">
-					<font style="font-size: 20pt; font-family: Fremont-Regular;">Starter Armor</font><br>
-					<br>
-					A character's primary profession (or primary for short) determines that character's appearance, the armor and runes they can use, and their available skills and attributes. For example, a Necromancer cannot wear the same armor that a Warrior can, and vice versa. Also, unique to each profession is a primary attribute, which is only available to characters who choose that primary. A character's primary profession is the only choice that cannot be changed once that character has been created.<br>
-					<br>
-					A character's secondary profession (or secondary) provides them with a second set of attributes and skills to complement the first. However, a character does not have access to their secondary profession's primary attribute, severely limiting the use of skills linked to that attribute (although characters may still obtain skills from the primary attribute of their secondary.) In addition, a character cannot use runes from their secondary profession, so their secondary attributes cannot normally increase beyond a rank of 12.
+				<div id="build">
+					<div id="armor_tab" class="clickable" style="font-size: 16pt; margin-left: 32.55%; margin-top: 8.89%; width: 18%; padding: 5px; position: absolute; font-weight: bold;">Armor</div><br>
+					<div id="insignias_tab" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 9.79%; width: 18%; padding: 5px; position: absolute;">Insignias</div><br>
+					<div id="runes_tab" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 10.68%; width: 18%; padding: 5px; position: absolute;">Runes</div><br>
+					<div id="weapons_tab" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 11.58%; width: 18%; padding: 5px; position: absolute;">Weapons</div><br>
+					<div id="upgrade_components_tab" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 12.48%; width: 18%; padding: 5px; position: absolute;">Upgrade Components</div><br>
+					<div id="inscriptions_tab" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 13.38%; width: 18%; padding: 5px; position: absolute;">Inscriptions</div><br>
+					<div id="skills_tab" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 14.28%; width: 18%; padding: 5px; position: absolute;">Skills</div>
+				
+					<img id="build_arrow" src="images/ui/gameplay_arrow.png" style=" margin-top: 2.1%; height: 1.8%; margin-left: 50%; position: absolute;"></img>
+				
+					<div id="armor" style="margin-top: 1.5%; margin-left: 54.5%; position: absolute; width: 32.95%; height: 50%; padding-right: 5%;">
+						<font style="font-size: 20pt; font-family: Fremont-Regular;">Armor</font><br>
+						<br>
+						Armor rating (AR) is a statistic that determines how much damage a creature will take from most sources of physical damage and elemental damage.<br>
+						<br>
+						Armor reduces the percentage of certain types of damage done to a creature. In broad terms, every gain of 40 points of armor rating cuts 50% of non-armor-ignoring damage and every 40 points lost of AR doubles that same kind of damage. For example, creatures with an AR of 100 take half as much damage as those with AR 60 and twice as much as those with AR 140. Accordingly, it is critical for a character to use armor sets with the maximum armor rating possible.
+					</div>
+					<div id="insignias" style="margin-top: 1.5%; margin-left: 54.5%; position: absolute; width: 32.95%; height: 50%; padding-right: 5%;">
+						<font style="font-size: 20pt; font-family: Fremont-Regular;">Insignias</font><br>
+						<br>
+						Insignia are a prefix armor upgrade component that can boost health, increase armor rating, reduce damage, or provide some other profession-specific benefit. They do not drop directly from foes or chests; they must be extracted from armor salvage items. They can be purchased from any Rune Trader at market prices.<br>
+						<br>
+						Insignia can be applied to all armor types except for certain collector armor. Applying a new Insignia will overwrite the existing ones, but the original can be salvaged first.
+					</div>
+					<div id="runes" style="margin-top: 1.5%; margin-left: 54.5%; position: absolute; width: 32.95%; height: 50%; padding-right: 5%;">
+						<font style="font-size: 20pt; font-family: Fremont-Regular;">Runes</font><br>
+						<br>
+						Runes (with one exception) are suffix upgrade components which can be used to upgrade armor, to provide a passive benefit to the character wearing the armor. Some of the more powerful runes also possess a downside - they reduce a character's maximum health.<br>
+						<br>
+						Profession-specific runes, when inserted into an armor piece, enhance the attribute level of a character wearing that piece of armor. Warriors get an additional type of rune, a Rune of Absorption, that does not enhance an attribute; it instead provides damage reduction. See the table on the right for images of profession-specific runes.<br>
+						<br>
+						Another property of such runes is that they can only be applied to armor pieces of that profession. In other words, a character can only use runes of their primary profession, since they can only wear the armor of their primary profession. Runes for one profession cannot be applied on another profession's armor piece.
+					</div>
+					<div id="weapons" style="margin-top: 1.5%; margin-left: 54.5%; position: absolute; width: 32.95%; height: 50%; padding-right: 5%;">
+						<font style="font-size: 20pt; font-family: Fremont-Regular;">Weapons</font><br>
+						<br>
+						A weapon is a piece of equipment that can be equipped in a character's primary weapon or off-hand inventory slots. Weapons are visible in your character's hands when the player is outside of a town or outpost (for example in an explorable area or mission).<br>
+						<br>
+						In Guild Wars, shields and focus items are considered weapons, although they are technically not armaments.
+					</div>
+					<div id="upgrade_components" style="margin-top: 1.5%; margin-left: 54.5%; position: absolute; width: 32.95%; height: 50%; padding-right: 5%;">
+						<font style="font-size: 20pt; font-family: Fremont-Regular;">Upgrade Components</font><br>
+						<br>
+						Upgrade components are items that are used to upgrade existing armor or weapons. They are applied by double clicking the upgrade item and then clicking once on the target item.<br>
+					</div>
+					<div id="inscriptions" style="margin-top: 1.5%; margin-left: 54.5%; position: absolute; width: 32.95%; height: 50%; padding-right: 5%;">
+						<font style="font-size: 20pt; font-family: Fremont-Regular;">Inscriptions</font><br>
+						<br>
+						Inscriptions can be salvaged from any weapons that carry them by using a Perfect, expert, or superior salvage kit. (Expert and Superior kits have a chance of breaking the weapon when salvaging; see Salvage for details.) Weapons carrying inscription slots can be obtained in the following ways:<br>
+					</div>
+					<div id="skills" style="margin-top: 1.5%; margin-left: 54.5%; position: absolute; width: 32.95%; height: 50%; padding-right: 5%;">
+						<font style="font-size: 20pt; font-family: Fremont-Regular;">Skills</font><br>
+						<br>
+						Skills are the basic gameplay unit in Guild Wars. There are many skills in the game, and each campaign contains its own set of hundreds. In staging areas, a player can choose to equip skills in their skill bar, to a maximum of 8 skills (including at most one elite skill) at a time. Skill icons represents skills in the User interface.<br>
+						<br>
+						Every time you are in a town or outpost, you are allowed to change your attribute settings (press "H" to view your attributes) and your skills (press "K" to view your skill list) as much as you see fit before continuing in your travels. Many times, the key to success during your adventures is to adjust your skills and attributes based on the enemies and challenges you are faced with. The skills that work well in one situation will often fail in another. Do not be afraid to experiment.
+					</div>
 				</div>
-				<div id="armor" style="margin-top: 1.5%; margin-left: 54.5%; position: absolute; width: 32.95%; height: 50%; padding-right: 5%;">
-					<font style="font-size: 20pt; font-family: Fremont-Regular;">Armor</font><br>
-					<br>
-					Armor rating (AR) is a statistic that determines how much damage a creature will take from most sources of physical damage and elemental damage.<br>
-					<br>
-					Armor reduces the percentage of certain types of damage done to a creature. In broad terms, every gain of 40 points of armor rating cuts 50% of non-armor-ignoring damage and every 40 points lost of AR doubles that same kind of damage. For example, creatures with an AR of 100 take half as much damage as those with AR 60 and twice as much as those with AR 140. Accordingly, it is critical for a character to use armor sets with the maximum armor rating possible.
+				<div id="combat">
+					<div id="attack_layers_tab" class="clickable" style="font-size: 16pt; margin-left: 32.55%; margin-top: 8.89%; width: 18%; padding: 5px; position: absolute; font-weight: bold;">Attack Layers</div><br>
+					<div id="conditions_tab" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 9.79%; width: 18%; padding: 5px; position: absolute;">Conditions</div><br>
+					<div id="morale_boosts_tab" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 10.68%; width: 18%; padding: 5px; position: absolute;">Morale Boosts</div><br>
+					<div id="death_penalty_tab" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 11.58%; width: 18%; padding: 5px; position: absolute;">Death Penalty</div><br>
+					<div id="areas_of_effect_tab" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 12.48%; width: 18%; padding: 5px; position: absolute;">Areas of Effect</div><br>
+					<div id="weapon_damage_tab" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 13.38%; width: 18%; padding: 5px; position: absolute;">Weapon Damage</div><br>
+					<div id="skill_damage_tab" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 14.28%; width: 18%; padding: 5px; position: absolute;">Skill Damage</div>
+					<div id="drops_tab" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 16.48%; width: 18%; padding: 5px; position: absolute;">Drops</div>
+					<div id="critical_hits_tab" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 18.68%; width: 18%; padding: 5px; position: absolute;">Critical Hits</div>
+				
+					<img id="combat_arrow" src="images/ui/gameplay_arrow.png" style=" margin-top: 2.1%; height: 1.8%; margin-left: 50%; position: absolute;"></img>
+				
+					<div id="attack_layers" style="margin-top: 1.5%; margin-left: 54.5%; position: absolute; width: 32.95%; height: 50%; padding-right: 5%;">
+						<font style="font-size: 20pt; font-family: Fremont-Regular;">Attack Layers</font><br>
+						<br>
+						An attack is performed whenever your weapon is swung or launched at a foe. Selecting a foe and pressing "Spacebar" (default key) will cause you to attack. Melee weapons attacking are represented by them being swung, and ranged weapons are represented by projectiles being thrown or shot towards the enemy.<br>
+						<br>
+						These are auto attacks, with no special augmentation. Warrior, Ranger, Assassin, Dervish, and Paragon professions all have attack skills: skills which (generally) use the same timing as an auto attack but which do something extra: more damage, knock down, application of conditions, etc.<br>
+						<br>
+						Hitting with attacks is the most common way to build adrenaline. Attacks, and the added effects from attack skills, form the primary damage source for most teams. Brawler's and Nightstalker's Insignias increase armor rating while attacking.
+					</div>
+					<div id="conditions" style="margin-top: 1.5%; margin-left: 54.5%; position: absolute; width: 32.95%; height: 50%; padding-right: 5%;">
+						<font style="font-size: 20pt; font-family: Fremont-Regular;">Conditions</font><br>
+						<br>
+						A condition is a type of negative effect that is caused by a skill. Each condition, sometimes known as an injury or ailment, is applied via skills, either on the skill user's foes or on the skill user as a way to balance the skill. All conditions wear off in time, but can also be removed by a number of skills.<br>
+						<br>
+						Corresponding conditions can be inflicted by the environment itself upon triggering an environment effect : Lava for example will almost always inflict burning and cripple on contact; Swamps will sometimes inflict poison on contact. A variety of traps have also been known to be able to inflict conditions, such as poison and burning from Poison and Fire traps respectively, or bleeding and cripple from Splinter Mines.
+					</div>
+					<div id="morale_boosts" style="margin-top: 1.5%; margin-left: 54.5%; position: absolute; width: 32.95%; height: 50%; padding-right: 5%;">
+						<font style="font-size: 20pt; font-family: Fremont-Regular;">Morale Boosts</font><br>
+						<br>
+						A Morale Boost is an effect that increases your base Energy and Health from one to ten percent (it is not applied to energy or health from equipped armor or weapon sets). It can be acquired through using certain consumables or through completing various goals during a mission or quest.<br>
+					</div>
+					<div id="death_penalty" style="margin-top: 1.5%; margin-left: 54.5%; position: absolute; width: 32.95%; height: 50%; padding-right: 5%;">
+						<font style="font-size: 20pt; font-family: Fremont-Regular;">Death Penalty</font><br>
+						<br>
+						Death Penalty (DP) is an effect that decreases a character's maximum health and energy by 1-60%. It is acquired by dying and can be reduced by gaining experience, countered by Morale Boosts, or removed by consumables.<br>
+						<br>
+						In Hard mode, Resurrection Shrines will not work if every party member has 60% Death Penalty; a wipe will return your team to the last town or outpost.
+					</div>
+					<div id="areas_of_effect" style="margin-top: 1.5%; margin-left: 54.5%; position: absolute; width: 32.95%; height: 50%; padding-right: 5%;">
+						<font style="font-size: 20pt; font-family: Fremont-Regular;">Areas of Effect</font><br>
+						<br>
+						Area of effect refers to skills or other gameplay mechanics that affect creatures in a specific range to the target. Area of effect mechanics in Guild Wars have seven possible ranges.<br>
+					</div>
+					<div id="weapon_damage" style="margin-top: 1.5%; margin-left: 54.5%; position: absolute; width: 32.95%; height: 50%; padding-right: 5%;">
+						<font style="font-size: 20pt; font-family: Fremont-Regular;">Weapon Damage</font><br>
+						<br>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultrices enim vel consequat elementum. Integer tristique vitae nunc non feugiat. Donec urna magna, mollis eu turpis non, euismod molestie metus. Vestibulum sollicitudin mauris vel augue sodales, at dapibus mauris dictum. Donec nulla nibh, convallis id sodales eu, hendrerit et est. Integer mattis urna et mauris volutpat molestie. Nam lacus nunc, tempus eu lectus ac, rhoncus pulvinar nulla.<br>
+						<br>
+						Nunc ac turpis dignissim justo pharetra tempus. Aenean vestibulum quam ac sodales sagittis. Donec rutrum, nisi sit amet placerat tempus, enim ipsum fringilla diam, vitae fermentum dolor diam sit amet quam. Ut vel orci vel lacus consequat condimentum vel at lacus. Donec vitae purus id lorem accumsan faucibus. Nullam at luctus lectus, eget placerat tellus. Duis tellus mi, tincidunt vel enim vestibulum, egestas consectetur ipsum. Donec tincidunt tellus a massa pellentesque ultricies. Fusce sodales neque sed porttitor finibus. Donec eget eros et lectus vehicula volutpat et in libero.
+					</div>
+					<div id="skill_damage" style="margin-top: 1.5%; margin-left: 54.5%; position: absolute; width: 32.95%; height: 50%; padding-right: 5%;">
+						<font style="font-size: 20pt; font-family: Fremont-Regular;">Skill Damage</font><br>
+						<br>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultrices enim vel consequat elementum. Integer tristique vitae nunc non feugiat. Donec urna magna, mollis eu turpis non, euismod molestie metus. Vestibulum sollicitudin mauris vel augue sodales, at dapibus mauris dictum. Donec nulla nibh, convallis id sodales eu, hendrerit et est. Integer mattis urna et mauris volutpat molestie. Nam lacus nunc, tempus eu lectus ac, rhoncus pulvinar nulla.<br>
+						<br>
+						Nunc ac turpis dignissim justo pharetra tempus. Aenean vestibulum quam ac sodales sagittis. Donec rutrum, nisi sit amet placerat tempus, enim ipsum fringilla diam, vitae fermentum dolor diam sit amet quam. Ut vel orci vel lacus consequat condimentum vel at lacus. Donec vitae purus id lorem accumsan faucibus. Nullam at luctus lectus, eget placerat tellus. Duis tellus mi, tincidunt vel enim vestibulum, egestas consectetur ipsum. Donec tincidunt tellus a massa pellentesque ultricies. Fusce sodales neque sed porttitor finibus. Donec eget eros et lectus vehicula volutpat et in libero.
+					</div>
+					<div id="drops" style="margin-top: 1.5%; margin-left: 54.5%; position: absolute; width: 32.95%; height: 50%; padding-right: 5%;">
+						<font style="font-size: 20pt; font-family: Fremont-Regular;">Drops</font><br>
+						<br>
+						A drop or loot is anything that falls from a creature that dies in PvE, from a chest, or from a present.<br>
+						<br>
+						Non-boss foes usually drop a single item or pile of gold, while bosses can drop up to four items and a pile of gold. In addition, seasonal items can also drop from foes (including charmable animals and practice targets) during special events (e.g. a non-boss foe can drop a single item and a seasonal item at the same time). Items dropped by foes are assigned to a single ally and gold coin drops are unassigned.<br>
+						<br>
+						Items that drop from unlocking a chest are assigned to the party member that opened it. Those chests that do not require a key (e.g. Wreckage or those that spawn after completing quests in the Fissure of Woe or the Underworld) will randomly assign their drops; this does not include dungeon chests, hidden treasures, and treasures. Presents drop items that spawn directly into a character's inventory (excluding Lunar Fortunes, which drops the item on the ground).
+					</div>
+					<div id="critical_hits" style="margin-top: 1.5%; margin-left: 54.5%; position: absolute; width: 32.95%; height: 50%; padding-right: 5%;">
+						<font style="font-size: 20pt; font-family: Fremont-Regular;">Critical Hits</font><br>
+						<br>
+						A critical hit is a successful attack that deals additional damage, by negating 20 points of armor rating. In addition, player characters deal maximum damage with their weapons. Some skills improve the chances of criticals while others depend on crits to trigger additional effects. Critical hits are especially important to Assassins, whose primary attribute, Critical Strikes increases both the chances and the benefits of critical hits.<br>
+						<br>
+						A critical hit is indicated by a distinct hit sound and larger numbers in the graphical display. A lethal critical hit can be indicated by an even more menacing sound.
+					</div>
 				</div>
-				<div id="attack_layers" style="margin-top: 1.5%; margin-left: 54.5%; position: absolute; width: 32.95%; height: 50%; padding-right: 5%;">
-					<font style="font-size: 20pt; font-family: Fremont-Regular;">Attack Layers</font><br>
-					<br>
-					An attack is performed whenever your weapon is swung or launched at a foe. Selecting a foe and pressing "Spacebar" (default key) will cause you to attack. Melee weapons attacking are represented by them being swung, and ranged weapons are represented by projectiles being thrown or shot towards the enemy.<br>
-					<br>
-					These are auto attacks, with no special augmentation. Warrior, Ranger, Assassin, Dervish, and Paragon professions all have attack skills: skills which (generally) use the same timing as an auto attack but which do something extra: more damage, knock down, application of conditions, etc.<br>
-					<br>
-					Hitting with attacks is the most common way to build adrenaline. Attacks, and the added effects from attack skills, form the primary damage source for most teams. Brawler's and Nightstalker's Insignias increase armor rating while attacking.
-				</div>
-				<!--
-				<div class="clickable gameplay_menu" style="font-size: 14pt; margin-left: 32.55%; margin-top: 13.72%; width: 17%; padding: 5px; position: absolute;">Runes</div><br>
-				<div class="clickable gameplay_menu" style="font-size: 14pt; margin-left: 32.55%; margin-top: 14.82%; width: 17%; padding: 5px; position: absolute;">Sigils</div><br>
-				<div class="clickable gameplay_menu" style="font-size: 14pt; margin-left: 32.55%; margin-top: 15.92%; width: 17%; padding: 5px; position: absolute;">Skills</div><br>
-				<div class="clickable gameplay_menu" style="font-size: 14pt; margin-left: 32.55%; margin-top: 17.02%; width: 17%; padding: 5px; position: absolute;">Attack Layers</div><br>
-				<div class="clickable gameplay_menu" style="font-size: 14pt; margin-left: 32.55%; margin-top: 18.12%; width: 17%; padding: 5px; position: absolute;">Area of Effect</div><br>
-				<div class="clickable gameplay_menu" style="font-size: 14pt; margin-left: 32.55%; margin-top: 19.22%; width: 17%; padding: 5px; position: absolute;">Damage</div><br>
-				<div class="clickable gameplay_menu" style="font-size: 14pt; margin-left: 32.55%; margin-top: 20.32%; width: 17%; padding: 5px; position: absolute;">Leveling Up</div><br>
-				<div class="clickable gameplay_menu" style="font-size: 14pt; margin-left: 32.55%; margin-top: 21.42%; width: 17%; padding: 5px; position: absolute;">Other</div><br>
-				-->
 			</div>
 		</div>
 	</body>
