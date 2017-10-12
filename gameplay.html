@@ -32,7 +32,7 @@
 			</div> 
 			
 			<!-- Content -->
-			<div id="gameplay_content" style="height: 100%; width: 100%; overflow: hidden;">
+			<div id="gameplay_content">
 				<!-- Overview -->
 				<div id="icon">
 				</div>
@@ -46,53 +46,69 @@
 					Everything listed in this section are guidelines on how to implement GW systems into DnD. Feel free to make up your own rules as you see fit!
 				</div>
 				
-				<div id="character" class="clickable">I. Character</div>
-				<div id="build" class="clickable">II. Build</div>
-				<div id="combat" class="clickable">III. Combat</div>
+				<div id="character_tab" class="clickable">I. Character</div>
+				<div id="build_tab" class="clickable">II. Build</div>
+				<div id="combat_tab" class="clickable">III. Combat</div>
 				<div style="background-color: #222222; margin-left: 32.55%; margin-top: 7.05%; height: 0.3%; width: 59.9%; position: absolute;"></div>
 				
 				<div id="character_options">
-					<div id="character_one" class="" style="font-size: 14pt; margin-left: 32.55%; margin-top: 8.89%; width: 18%; padding: 5px; position: absolute; font-weight: bold;">Choosing Professions</div> <img src="images/ui/gameplay_arrow.png" style=" margin-top: 9.4%; height: 1.8%; margin-left: 48.5%; position: absolute;"></img><br>
-					<div id="character_two" class="clickable gameplay_submenu" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 9.79%; width: 18%; padding: 5px; position: absolute;">Starter Armor</div><br>
-					<div id="character_three" class="clickable gameplay_submenu" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 10.68%; width: 18%; padding: 5px; position: absolute;">Starter Weapons</div><br>
-					<div id="character_four" class="clickable gameplay_submenu" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 11.58%; width: 18%; padding: 5px; position: absolute;">Starter Skills</div><br>
-					<div id="character_five" class="clickable gameplay_submenu" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 12.48%; width: 18%; padding: 5px; position: absolute;">Attributes</div><br>
-					<div id="character_six" class="clickable gameplay_submenu" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 13.38%; width: 18%; padding: 5px; position: absolute;">Leveling Up</div><br>
+					<div id="character_one" class="" style="font-size: 16pt; margin-left: 32.55%; margin-top: 8.89%; width: 18%; padding: 5px; position: absolute; font-weight: bold;">Choosing Professions</div> <img src="images/ui/gameplay_arrow.png" style=" margin-top: 9.4%; height: 1.8%; margin-left: 48.5%; position: absolute;"></img><br>
+					<div id="character_two" class="clickable gameplay_submenu" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 9.79%; width: 18%; padding: 5px; position: absolute;">Starter Armor</div><br>
+					<div id="character_three" class="clickable gameplay_submenu" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 10.68%; width: 18%; padding: 5px; position: absolute;">Starter Weapons</div><br>
+					<div id="character_four" class="clickable gameplay_submenu" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 11.58%; width: 18%; padding: 5px; position: absolute;">Starter Skills</div><br>
+					<div id="character_five" class="clickable gameplay_submenu" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 12.48%; width: 18%; padding: 5px; position: absolute;">Attributes</div><br>
+					<div id="character_six" class="clickable gameplay_submenu" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 13.38%; width: 18%; padding: 5px; position: absolute;">Leveling Up</div><br>
 				</div>
 				<div id="build_options">
-					<div id="build_one" class="clickable" style="font-size: 14pt; margin-left: 32.55%; margin-top: 8.89%; width: 18%; padding: 5px; position: absolute; font-weight: bold;">Armor</div> <img src="images/ui/gameplay_arrow.png" style=" margin-top: 9.4%; height: 1.8%; margin-left: 48.5%; position: absolute;"></img><br>
-					<div id="build_two" class="clickable" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 9.79%; width: 18%; padding: 5px; position: absolute;">Insignias</div><br>
-					<div id="build_three" class="clickable" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 10.68%; width: 18%; padding: 5px; position: absolute;">Runes</div><br>
-					<div id="build_four" class="clickable" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 11.58%; width: 18%; padding: 5px; position: absolute;">Weapons</div><br>
-					<div id="build_five" class="clickable" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 12.48%; width: 18%; padding: 5px; position: absolute;">Upgrade Components</div><br>
-					<div id="build_six" class="clickable" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 13.38%; width: 18%; padding: 5px; position: absolute;">Inscriptions</div><br>
-					<div id="build_seven" class="clickable" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 14.28%; width: 18%; padding: 5px; position: absolute;">Skills</div>
+					<div id="build_one" class="clickable" style="font-size: 16pt; margin-left: 32.55%; margin-top: 8.89%; width: 18%; padding: 5px; position: absolute; font-weight: bold;">Armor</div> <img src="images/ui/gameplay_arrow.png" style=" margin-top: 9.4%; height: 1.8%; margin-left: 48.5%; position: absolute;"></img><br>
+					<div id="build_two" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 9.79%; width: 18%; padding: 5px; position: absolute;">Insignias</div><br>
+					<div id="build_three" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 10.68%; width: 18%; padding: 5px; position: absolute;">Runes</div><br>
+					<div id="build_four" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 11.58%; width: 18%; padding: 5px; position: absolute;">Weapons</div><br>
+					<div id="build_five" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 12.48%; width: 18%; padding: 5px; position: absolute;">Upgrade Components</div><br>
+					<div id="build_six" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 13.38%; width: 18%; padding: 5px; position: absolute;">Inscriptions</div><br>
+					<div id="build_seven" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 14.28%; width: 18%; padding: 5px; position: absolute;">Skills</div>
 				</div>
 				<div id="combat_options">
-					<div id="combat_one" class="clickable" style="font-size: 14pt; margin-left: 32.55%; margin-top: 8.89%; width: 18%; padding: 5px; position: absolute; font-weight: bold;">Attack Layers</div> <img src="images/ui/gameplay_arrow.png" style=" margin-top: 9.4%; height: 1.8%; margin-left: 48.5%; position: absolute;"></img><br>
-					<div id="combat_two" class="clickable" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 9.79%; width: 18%; padding: 5px; position: absolute;">Conditions</div><br>
-					<div id="combat_three" class="clickable" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 10.68%; width: 18%; padding: 5px; position: absolute;">Morale Boosts</div><br>
-					<div id="combat_four" class="clickable" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 11.58%; width: 18%; padding: 5px; position: absolute;">Death Penalty</div><br>
-					<div id="combat_five" class="clickable" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 12.48%; width: 18%; padding: 5px; position: absolute;">Areas of Effect</div><br>
-					<div id="combat_six" class="clickable" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 13.38%; width: 18%; padding: 5px; position: absolute;">Weapon Damage</div><br>
-					<div id="combat_seven" class="clickable" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 14.28%; width: 18%; padding: 5px; position: absolute;">Skill Damage</div>
-					<div id="combat_eight" class="clickable" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 16.48%; width: 18%; padding: 5px; position: absolute;">Rewards and Treasure</div>
-					<div id="combat_nine" class="clickable" style="color: #999999; font-size: 14pt; margin-left: 32.55%; margin-top: 18.68%; width: 18%; padding: 5px; position: absolute;">Critical Chance</div>
+					<div id="combat_one" class="clickable" style="font-size: 16pt; margin-left: 32.55%; margin-top: 8.89%; width: 18%; padding: 5px; position: absolute; font-weight: bold;">Attack Layers</div> <img src="images/ui/gameplay_arrow.png" style=" margin-top: 9.4%; height: 1.8%; margin-left: 48.5%; position: absolute;"></img><br>
+					<div id="combat_two" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 9.79%; width: 18%; padding: 5px; position: absolute;">Conditions</div><br>
+					<div id="combat_three" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 10.68%; width: 18%; padding: 5px; position: absolute;">Morale Boosts</div><br>
+					<div id="combat_four" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 11.58%; width: 18%; padding: 5px; position: absolute;">Death Penalty</div><br>
+					<div id="combat_five" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 12.48%; width: 18%; padding: 5px; position: absolute;">Areas of Effect</div><br>
+					<div id="combat_six" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 13.38%; width: 18%; padding: 5px; position: absolute;">Weapon Damage</div><br>
+					<div id="combat_seven" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 14.28%; width: 18%; padding: 5px; position: absolute;">Skill Damage</div>
+					<div id="combat_eight" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 16.48%; width: 18%; padding: 5px; position: absolute;">Rewards and Treasure</div>
+					<div id="combat_nine" class="clickable" style="color: #999999; font-size: 16pt; margin-left: 32.55%; margin-top: 18.68%; width: 18%; padding: 5px; position: absolute;">Critical Chance</div>
 				</div>
 				
 				<div id="choosing_professions" style="margin-top: 1.5%; margin-left: 54.5%; position: absolute; width: 32.95%; height: 50%; padding-right: 5%;">
-					<font style="font-size: 18pt; font-family: Fremont-Regular;">Choosing Professions</font><br>
+					<font style="font-size: 20pt; font-family: Fremont-Regular;">Choosing Professions</font><br>
 					<br>
 					A character's primary profession (or primary for short) determines that character's appearance, the armor and runes they can use, and their available skills and attributes. For example, a Necromancer cannot wear the same armor that a Warrior can, and vice versa. Also, unique to each profession is a primary attribute, which is only available to characters who choose that primary. A character's primary profession is the only choice that cannot be changed once that character has been created.<br>
 					<br>
 					A character's secondary profession (or secondary) provides them with a second set of attributes and skills to complement the first. However, a character does not have access to their secondary profession's primary attribute, severely limiting the use of skills linked to that attribute (although characters may still obtain skills from the primary attribute of their secondary.) In addition, a character cannot use runes from their secondary profession, so their secondary attributes cannot normally increase beyond a rank of 12.
 				</div>
 				<div id="starter_armor" style="margin-top: 1.5%; margin-left: 54.5%; position: absolute; width: 32.95%; height: 50%; padding-right: 5%;">
-					<font style="font-size: 18pt; font-family: Fremont-Regular;">Starter Armor</font><br>
+					<font style="font-size: 20pt; font-family: Fremont-Regular;">Starter Armor</font><br>
 					<br>
 					A character's primary profession (or primary for short) determines that character's appearance, the armor and runes they can use, and their available skills and attributes. For example, a Necromancer cannot wear the same armor that a Warrior can, and vice versa. Also, unique to each profession is a primary attribute, which is only available to characters who choose that primary. A character's primary profession is the only choice that cannot be changed once that character has been created.<br>
 					<br>
 					A character's secondary profession (or secondary) provides them with a second set of attributes and skills to complement the first. However, a character does not have access to their secondary profession's primary attribute, severely limiting the use of skills linked to that attribute (although characters may still obtain skills from the primary attribute of their secondary.) In addition, a character cannot use runes from their secondary profession, so their secondary attributes cannot normally increase beyond a rank of 12.
+				</div>
+				<div id="armor" style="margin-top: 1.5%; margin-left: 54.5%; position: absolute; width: 32.95%; height: 50%; padding-right: 5%;">
+					<font style="font-size: 20pt; font-family: Fremont-Regular;">Armor</font><br>
+					<br>
+					Armor rating (AR) is a statistic that determines how much damage a creature will take from most sources of physical damage and elemental damage.<br>
+					<br>
+					Armor reduces the percentage of certain types of damage done to a creature. In broad terms, every gain of 40 points of armor rating cuts 50% of non-armor-ignoring damage and every 40 points lost of AR doubles that same kind of damage. For example, creatures with an AR of 100 take half as much damage as those with AR 60 and twice as much as those with AR 140. Accordingly, it is critical for a character to use armor sets with the maximum armor rating possible.
+				</div>
+				<div id="attack_layers" style="margin-top: 1.5%; margin-left: 54.5%; position: absolute; width: 32.95%; height: 50%; padding-right: 5%;">
+					<font style="font-size: 20pt; font-family: Fremont-Regular;">Attack Layers</font><br>
+					<br>
+					An attack is performed whenever your weapon is swung or launched at a foe. Selecting a foe and pressing "Spacebar" (default key) will cause you to attack. Melee weapons attacking are represented by them being swung, and ranged weapons are represented by projectiles being thrown or shot towards the enemy.<br>
+					<br>
+					These are auto attacks, with no special augmentation. Warrior, Ranger, Assassin, Dervish, and Paragon professions all have attack skills: skills which (generally) use the same timing as an auto attack but which do something extra: more damage, knock down, application of conditions, etc.<br>
+					<br>
+					Hitting with attacks is the most common way to build adrenaline. Attacks, and the added effects from attack skills, form the primary damage source for most teams. Brawler's and Nightstalker's Insignias increase armor rating while attacking.
 				</div>
 				<!--
 				<div class="clickable gameplay_menu" style="font-size: 14pt; margin-left: 32.55%; margin-top: 13.72%; width: 17%; padding: 5px; position: absolute;">Runes</div><br>

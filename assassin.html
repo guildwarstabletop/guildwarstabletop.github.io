@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>Guild Wars: Tabletop</title>
+
+		<!-- CSS -->
+		<link href="css/stylesheet.css" rel="stylesheet">
+		<link href="css/assassin.css" rel="stylesheet">
+		
+		<!-- JavaScript -->
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/assassin.js"></script>
+	</head>
+
+	<body>	
+		<div id="all">	
+			<!-- Menu Bar -->
+			<div id="main">
+											<div id="main_title">												Guild Wars: Tabletop	</div>
+				<a href="index.html">		<div id="main_about" 		class="clickable main_unselected">		About					</div></a>
+				<a href="professions.html">	<div id="main_professions" 	class="clickable main_selected">		Professions				</div></a>
+				<a href="skills.html">		<div id="main_skills" 		class="clickable main_unselected">		Skills					</div></a>
+				<a href="gameplay.html">	<div id="main_gameplay" 	class="clickable main_unselected">		Gameplay				</div></a>
+				<a href="downloads.html">	<div id="main_downloads" 	class="clickable main_unselected">		Downloads				</div></a>
+				<a href="contact.html">		<div id="main_contact" 		class="clickable main_unselected">		Contact					</div></a>
+			</div> 
+			
+			<!-- Overview -->
+			<div id="portrait" style="margin-left: 8.4%; margin-top: 8.35%; height: 32%; width: 18%; position: absolute;" align="middle">
+				<img src="images/portraits/assassin.png" style="height: 100%;"></img>
+			</div>
+			<div id="name" align="middle">
+				ASSASSIN
+			</div>
+			<div id="divider" align="middle">
+				<img src="images/ui/divider.png" style="height: 55%; width: 75%;"></img>
+			</div>
+			<div id="physical_resistance" title="Physical Resistance" style="margin-left: 8.4%; margin-top: 30.2%; height: 4%; width: 2%; background: url('images/ui/physical_resistance.png') no-repeat center center; position: absolute;">
+			</div>
+			<div id="elemental_resistance" style="margin-left: 8.4%; margin-top: 32.7%; height: 4%; width: 2%; background: url('images/ui/elemental_resistance.png') no-repeat center center; position: absolute;">
+			</div>
+			<div id="energy" style="margin-left: 8.4%; margin-top: 35.2%; height: 4%; width: 2%; background: url('images/ui/energy.png') no-repeat center center; position: absolute;">
+			</div>
+			<div id="energy_regeneration" style="margin-left: 8.4%; margin-top: 37.7%; height: 4%; width: 2%; background: url('images/ui/energy_regeneration.png') no-repeat center center; position: absolute;">
+			</div>
+			<div id="physical_resistance_bar" title="Physical Resistance" style="background: url('images/ui/physical_resistance_bar.png');  background-repeat: repeat-x; border: 1px solid rgba(0, 0, 0, 0.5); margin-left: 10.9%; margin-top: 30.2%; height: 4%; width: 0%; position: absolute;">
+			</div>
+			<div id="elemental_resistance_bar" style="background: url('images/ui/elemental_resistance_bar.png');  background-repeat: repeat-x; border: 1px solid rgba(0, 0, 0, 0.5); margin-left: 10.9%; margin-top: 32.7%; height: 4%; position: absolute;">
+			</div>
+			<div id="energy_bar" style="background: url('images/ui/energy_bar.png');  background-repeat: repeat-x; border: 1px solid rgba(0, 0, 0, 0.5); margin-left: 10.9%; margin-top: 35.2%; height: 4%; position: absolute;">
+			</div>
+			<div id="energy_regeneration_bar" style="background: url('images/ui/energy_regeneration_bar.png');  background-repeat: repeat-x; border: 1px solid rgba(0, 0, 0, 0.5); margin-left: 10.9%; margin-top: 37.7%; height: 4%; position: absolute;">
+			</div>
+			
+			<!-- Tabs -->
+			<div id="tab_label" style="margin-left: 32.55%; margin-top: 7.52%; height: 12%; width: 26%; position: absolute; font-family: Centrale Sans Light; font-size: 51pt; color: #e9117c;">
+				TRAITS
+			</div>
+			<div id="traits_tab" class="clickable" style="background: url('images/icons/feats.png') no-repeat center center; background-color: #222222; margin-left: 81.45%; margin-top: 8.35%; height: 7%; width: 3%; position: absolute; font-family: Centrale Sans Light; color: white;" align="middle">
+			</div>
+			<div id="attributes_tab" class="clickable" style="background: url('images/icons/attributes.png') no-repeat center center; background-color: #e9117c; margin-left: 85.45%; margin-top: 8.35%; height: 7%; width: 3%; position: absolute; font-family: Centrale Sans Light; color: white;" align="middle">
+			</div>
+			<div id="tips_tab" class="clickable" style="background: url('images/icons/tips.png') no-repeat center center;background-color: #e9117c; margin-left: 89.45%; margin-top: 8.35%; height: 7%; width: 3%; position: absolute; font-family: Centrale Sans Light; color: white;" align="middle">
+				</font>
+			</div>
+			<div id="tab_divider" style="background-color: #e9117c; margin-left: 32.55%; margin-top: 13.25%; height: 0.5%; width: 59.9%; position: absolute;" align="middle">
+			</div>
+			
+			<!-- Traits -->
+			<div id="traits" style="margin-left: 32.55%; margin-top: 14.9%; height: 50.3%; width: 59.9%; position: absolute;">
+				<div id="trait one icon" style="height: 45%; width: 19%; position: absolute;">
+					<img src="images/traits/target_vitals.png" style="height: 100%; width: 100%;"></img>
+				</div>
+				<div id="trait one" style="margin-left: 19%; width: 30%; height: 45%; position: absolute;">
+					<font style="font-family: Fremont-Regular; font-size: 20pt; color: #222222;">TARGET VITALS</font><br>
+					<font style="font-family: Centrale Sans Light; font-size: 16pt; color: #222222;">
+						Gain additional chance to critical hit
+					</font>
+				</div>
+				<div id="trait two icon" style="margin-left: 51%; height: 45%; width: 19%; position: absolute;">
+					<img src="images/traits/double_strikes.png" style="height: 100%; width: 100%;"></img>
+				</div>
+				<div id="trait two" style="margin-left: 70%; width: 30%; height: 45%; position: absolute;">
+					<font style="font-family: Fremont-Regular; font-size: 20pt; color: #222222;">DOUBLE STRIKES</font><br>
+					<font style="font-family: Centrale Sans Light; font-size: 16pt; color: #222222;">
+						Strike at once with both weapons, dealing two attacks simultaneously
+					</font>
+				</div>
+				<div id="trait three icon" style="margin-top: 22.9%; height: 45%; width: 19%; position: absolute;">
+					<img src="images/traits/attack_chains.png" style="height: 100%; width: 100%;"></img>
+				</div>
+				<div id="trait three" style="margin-left: 19%;  margin-top: 22.9%; width: 30%; height: 45%; position: absolute;">
+					<font style="font-family: Fremont-Regular; font-size: 20pt; color: #222222;">ATTACK CHAINS</font><br>
+					<font style="font-family: Centrale Sans Light; font-size: 16pt; color: #222222;">
+						Perform deadly combos using lead attacks, off-hand attacks, and dual attacks
+					</font>
+				</div>
+				<div id="trait four icon" style="margin-left: 51%; margin-top: 22.9%; height: 45%; width: 19%; position: absolute;">
+					<img src="images/traits/shadow_step.png" style="height: 100%; width: 100%;"></img>
+				</div>
+				<div id="trait four" style="margin-left: 70%;  margin-top: 22.9%; width: 30%; height: 45%; position: absolute;">
+					<font style="font-family: Fremont-Regular; font-size: 20pt; color: #222222;">SHADOW STEP</font><br>
+					<font style="font-family: Centrale Sans Light; font-size: 16pt; color: #222222;">
+						Traverse instantly from one place to another
+					</font>
+				</div>
+			</div>
+			
+			<!-- Attributes -->
+			<div id="attributes" style="margin-left: 32.55%; margin-top: 14.9%; height: 50.3%; width: 59.9%; position: absolute;">
+				<div id="critical_strikes" style="margin-left: 0%; margin-top: 0%; width: 66%; height: 20%; padding: 1%; position: absolute;">
+					<font class="clickable" style="font-family: Fremont-Regular; font-size: 20pt;">
+						<img id="bullet_1" src="images/ui/bullet.png" style="height: 25%; margin-top: -1%;"></img>
+						CRITICAL STRIKES (PRIMARY)</font><br>
+					<font style="margin-left: 5.5%; font-family: Centrale Sans Light; font-size: 13pt; color: #222222;">
+						Gain up to 12% critical chance and 2 energy on crit
+					</font>
+				</div>
+				
+				<div id="dagger_mastery" style="color: #e9117c; margin-left: 0%; margin-top: 7.9%; width: 66%; height: 20%; padding: 1%; position: absolute;">
+					<font class="clickable" style="font-family: Fremont-Regular; font-size: 20pt;">
+						<img id="bullet_2" src="images/ui/bullet_fill.png" style="height: 25%; margin-top: -1%;"></img>
+						DAGGER MASTERY</font><br>
+					<font style="margin-left: 5.5%; font-family: Centrale Sans Light; font-size: 13pt; color: #222222;">
+						Execute high damage, chain attacks with daggers or other light weapons
+					</font>
+				</div>
+				
+				<div id="deadly_arts" style="margin-left: 0%; margin-top: 15.8%; width: 66%; height: 20%; padding: 1%; position: absolute;">
+					<font class="clickable" style="font-family: Fremont-Regular; font-size: 20pt;">
+						<img id="bullet_3" src="images/ui/bullet.png" style="height: 25%; margin-top: -1%;"></img>
+						DEADLY ARTS</font><br>
+					<font style="margin-left: 5.5%; font-family: Centrale Sans Light; font-size: 13pt; color: #222222;">
+						Hex foes to lower their defenses and protect yourself from harm
+					</font>
+				</div>
+				
+				<div id="shadow_arts" style="margin-left: 0%; margin-top: 23.7%; width: 66%; height: 20%; padding: 1%; position: absolute;">
+					<font class="clickable" style="font-family: Fremont-Regular; font-size: 20pt;">
+						<img id="bullet_4" src="images/ui/bullet.png" style="height: 25%; margin-top: -1%;"></img>
+						SHADOW ARTS</font><br>
+					<font style="margin-left: 5.5%; font-family: Centrale Sans Light; font-size: 13pt; color: #222222;">
+						Stealthily avoid damage by dodging enemy attacks and abilities
+					</font>
+				</div>
+			
+				<div id="skill_card" style="margin-left: 70%; margin-top: 0%; width: 30%; height: 100%; position: absolute;">
+					<img id="example" class="clickable" src="images/example_skills/shock.png" style="height: 100%; width: 100%;"></img>
+				</div>
+			</div>
+			
+			<!-- Profession Navigation -->
+			<div id="nav_label" style="margin-left: 17.875%; margin-top: 42.8%; height: 3%; width: 10%; position: absolute; font-size: 15pt;" align="middle">
+			</div>
+			<div id="navigation" style="background-color: #222222; margin-left: 12.5%; margin-top: 44.6%; width: 75%; height: 10%; position: absolute;">
+				<div id="triangle-topleft" style="height: 100%"></div>
+				<div id="triangle-topright" style="height: 100%"></div>
+			</div>
+			
+			<a href="warrior.html">
+				<div id="warrior_nav" class="profession_nav" style="background: url('images/icons/warrior_nav_bw.png') no-repeat center center; margin-left: 21%; margin-top: 45.3%; width: 3.75%; height: 7.25%; position: absolute;">
+				</div>
+			</a>
+			<a href="ranger.html">
+				<div id="ranger_nav" class="profession_nav" style="background: url('images/icons/ranger_nav_bw.png') no-repeat center center; margin-left: 27%; margin-top: 45.3%; width: 3.75%; height: 7.25%; position: absolute;">
+				</div>
+			</a>
+			<a href="monk.html">
+				<div id="monk_nav" class="profession_nav" style="background: url('images/icons/monk_nav_bw.png') no-repeat center center; margin-left: 33%; margin-top: 45.3%; width: 3.75%; height: 7.25%; position: absolute;">
+				</div>
+			</a>	
+			<a href="necromancer.html">		
+				<div id="necromancer_nav" class="profession_nav" style="background: url('images/icons/necromancer_nav_bw.png') no-repeat center center; margin-left: 39%; margin-top: 45.3%; width: 3.75%; height: 7.25%; position: absolute;">
+				</div>
+			</a>
+			<a href="mesmer.html">	
+				<div id="mesmer_nav" class="profession_nav" style="background: url('images/icons/mesmer_nav_bw.png') no-repeat center center; margin-left: 45%; margin-top: 45.3%; width: 3.75%; height: 7.25%; position: absolute;">
+				</div>
+			</a>
+			<a href="elementalist.html">	
+				<div id="elementalist_nav" class="profession_nav" style="background: url('images/icons/elementalist_nav_bw.png') no-repeat center center; margin-left: 51%; margin-top: 45.3%; width: 3.75%; height: 7.25%; position: absolute;">
+				</div>
+			</a>
+			<div id="assassin_nav" style="background: url('images/icons/assassin_nav.png') no-repeat center center; margin-left: 57%; margin-top: 45.3%; width: 3.75%; height: 7.25%; position: absolute;">
+			</div>
+			<a href="ritualist.html">	
+				<div id="ritualist_nav" class="profession_nav" style="background: url('images/icons/ritualist_nav_bw.png') no-repeat center center; margin-left: 63%; margin-top: 45.3%; width: 3.75%; height: 7.25%; position: absolute;">
+				</div>
+			</a>
+			<a href="paragon.html">	
+				<div id="paragon_nav" class="profession_nav" style="background: url('images/icons/paragon_nav_bw.png') no-repeat center center; margin-left: 69%; margin-top: 45.3%; width: 3.75%; height: 7.25%; position: absolute;">
+				</div>
+			</a>
+			<a href="dervish.html">	
+				<div id="dervish_nav" class="profession_nav" style="background: url('images/icons/dervish_nav_bw.png') no-repeat center center; margin-left: 75%; margin-top: 45.3%; width: 3.75%; height: 7.25%; position: absolute;">
+				</div>
+			</a>
+		</div>
+	</body>
+</html>
