@@ -21,10 +21,6 @@
     src: url('../fonts/SourceSansPro-Regular.otf');
 }
 
-#gameplay_content {
-	padding-top: 3.3%;
-}
-
 #icon {
 	background: url('../images/ui/gameplay_icon.png') no-repeat center center;
 	height: 30%;
@@ -39,7 +35,7 @@
 	font-size: 25pt;
 	height: 5%;
 	margin-left: 8.4%;
-	margin-top: 20.9%;
+	margin-top: 24.2%;
 	position: absolute;
 	width: 18%;
 }
@@ -47,7 +43,7 @@
 #divider {
 	height: 5%;
 	margin-left: 9.9%;
-	margin-top: 24.4%;
+	margin-top: 27.7%;
 	position: absolute;
 	width: 15%;
 }
@@ -55,44 +51,23 @@
 #description {
 	height: 20%;
 	margin-left: 9.9%;
-	margin-top: 26.9%;
+	margin-top: 30.2%;
 	position: absolute;
 	width: 15%;
 }
 
-#character_tab {
-	border: 1pt solid #222222;
-	background-color: #222222;
-	color: white;
-	font-family: Fremont-Regular;
-	font-size: 18pt;
-	margin-left: 32.55%;
-	margin-top: 5.05%;
-	padding-left: 5px;
-	padding-right: 5px;
-	position: absolute;
+#triangle-topleft {
+	width: 0;
+	height: 0;
+	border-top: 100px solid white;
+	border-right: 100px solid transparent;
+	float: left;
 }
 
-#build_tab {
-	border: 1pt solid #222222;
-	color: #222222;
-	font-family: Fremont-Regular;
-	font-size: 18pt;
-	margin-left: 42.65%;
-	margin-top: 5.05%;
-	padding-left: 5px;
-	padding-right: 5px;
-	position: absolute;
-}
-
-#combat_tab {
-	border: 1pt solid #222222;
-	color: #222222;
-	font-family: Fremont-Regular;
-	font-size: 18pt;
-	margin-left: 50%;
-	margin-top: 5.05%;
-	padding-left: 5px;
-	padding-right: 5px;
-	position: absolute;
+#triangle-topright {
+	width: 0;
+	height: 0;
+	border-top: 100px solid white;
+	border-left: 100px solid transparent;
+	float: right;
 }

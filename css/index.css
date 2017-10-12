@@ -45,12 +45,11 @@
 }
 
 #index_cards {
-	background: url('../images/ui/index_cards.png') no-repeat center center;
-	height: 54.2%;
-	margin-left: 55.5%;
-	margin-top: 11.4%;
+	height: 61%;
+	margin-left: 51%;
+	margin-top: 10.4%;
 	position: absolute;
-	width: 35.45%;
+	width: 41%;
 }
 
 #index_icon {
