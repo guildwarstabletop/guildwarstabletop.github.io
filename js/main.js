@@ -1,6 +1,4 @@
-$(document).ready(function() {
-	$('#contact_tooltip').hide();
-	
+$(document).ready(function() {	
 	$('.clickable').hover(function() {
 		$(this).css('cursor','pointer');
 	},
@@ -17,9 +15,9 @@ $(document).ready(function() {
 	});
 	
 	$('#main_contact').hover(function() {
-		$('#contact_tooltip').show();
+		$('#contact_tooltip').css('visibility': 'visible');
 	},
 	function() {
-		$('#contact_tooltip').hide();
+		$('#contact_tooltip').css('visibility': 'hidden');
 	});
 });
