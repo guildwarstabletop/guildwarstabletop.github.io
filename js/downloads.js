@@ -104,7 +104,7 @@ $(document).ready(function() {
 	function() {
 		$('#downloads_description').html('');
 	});
-	$('#all_quick_references').hover(function() {
+	$('#all_references').hover(function() {
 		$('#downloads_description').html('All combat tools.');
 	},
 	function() {

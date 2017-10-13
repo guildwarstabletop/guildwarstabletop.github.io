@@ -93,7 +93,7 @@ a {
 	position: absolute;
 	right: 1%;
 	top: 7%;
-	
+	visibility: hidden;
 }
 
 .main_selected {
