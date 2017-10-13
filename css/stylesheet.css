@@ -85,6 +85,17 @@ a {
 	right: 1%;
 }
 
+#contact_tooltip {
+	background-color: #222222;
+	border-radius: 5pt;
+	color: white;
+	padding: 1%;
+	position: absolute;
+	right: 1%;
+	top: 7%;
+	
+}
+
 .main_selected {
 	background-color: #363636;
 	color: white;
