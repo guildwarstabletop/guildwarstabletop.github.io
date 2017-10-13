@@ -15,9 +15,9 @@ $(document).ready(function() {
 	});
 	
 	$('#main_contact').hover(function() {
-		$('#contact_tooltip').css('visibility': 'visible');
+		$('#contact_tooltip').css('visibility', 'visible');
 	},
 	function() {
-		$('#contact_tooltip').css('visibility': 'hidden');
+		$('#contact_tooltip').css('visibility', 'hidden');
 	});
 });
