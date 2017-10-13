@@ -1,28 +1,6 @@
-$(document).ready(function() {
-	// Initial State
-	$('#starter_armor').hide();
-	$('#starter_weapons').hide();
-	$('#starter_skills').hide();
-	$('#attributes').hide();
-	$('#leveling_up').hide();
-	
+$(document).ready(function() {	
 	$('#build').hide();
-	$('#insignias').hide();
-	$('#runes').hide();
-	$('#weapons').hide();
-	$('#upgrade_components').hide();
-	$('#inscriptions').hide();
-	$('#skills').hide();
-	
 	$('#combat').hide();
-	$('#conditions').hide();
-	$('#morale_boosts').hide();
-	$('#death_penalty').hide();
-	$('#areas_of_effect').hide();
-	$('#weapon_damage').hide();
-	$('#skill_damage').hide();
-	$('#drops').hide();
-	$('#critical_hits').hide();
 	
 	// Tabs
 	$('#character_tab').click(function() {	
@@ -73,12 +51,12 @@ $(document).ready(function() {
 
 		$('#character_arrow').css('margin-top','2.15%');
 		
-		$('#choosing_professions').show();
-		$('#starter_armor').hide();
-		$('#starter_weapons').hide();
-		$('#starter_skills').hide();
-		$('#attributes').hide();
-		$('#leveling_up').hide();
+		$('#choosing_professions').css('visibility', 'visible');
+		$('#starter_armor').css('visibility', 'hidden');
+		$('#starter_weapons').css('visibility', 'hidden');
+		$('#starter_skills').css('visibility', 'hidden');
+		$('#attributes').css('visibility', 'hidden');
+		$('#leveling_up').css('visibility', 'hidden');
 	});
 	$('#starter_armor_tab').click(function() {
 		$('#choosing_professions_tab').css({'color':'#999999','font-weight':'normal'});
@@ -90,12 +68,12 @@ $(document).ready(function() {
 
 		$('#character_arrow').css('margin-top','4.25%');
 		
-		$('#choosing_professions').hide();
-		$('#starter_armor').show();
-		$('#starter_weapons').hide();
-		$('#starter_skills').hide();
-		$('#attributes').hide();
-		$('#leveling_up').hide();
+		$('#choosing_professions').css('visibility', 'hidden');
+		$('#starter_armor').css('visibility', 'visible');
+		$('#starter_weapons').css('visibility', 'hidden');
+		$('#starter_skills').css('visibility', 'hidden');
+		$('#attributes').css('visibility', 'hidden');
+		$('#leveling_up').css('visibility', 'hidden');
 	});
 	$('#starter_weapons_tab').click(function() {
 		$('#choosing_professions_tab').css({'color':'#999999','font-weight':'normal'});
@@ -107,12 +85,12 @@ $(document).ready(function() {
 
 		$('#character_arrow').css('margin-top','6.35%');
 		
-		$('#choosing_professions').hide();
-		$('#starter_armor').hide();
-		$('#starter_weapons').show();
-		$('#starter_skills').hide();
-		$('#attributes').hide();
-		$('#leveling_up').hide();
+		$('#choosing_professions').css('visibility', 'hidden');
+		$('#starter_armor').css('visibility', 'hidden');
+		$('#starter_weapons').css('visibility', 'visible');
+		$('#starter_skills').css('visibility', 'hidden');
+		$('#attributes').css('visibility', 'hidden');
+		$('#leveling_up').css('visibility', 'hidden');
 	});
 	$('#starter_skills_tab').click(function() {
 		$('#choosing_professions_tab').css({'color':'#999999','font-weight':'normal'});
@@ -124,12 +102,12 @@ $(document).ready(function() {
 
 		$('#character_arrow').css('margin-top','8.45%');
 		
-		$('#choosing_professions').hide();
-		$('#starter_armor').hide();
-		$('#starter_weapons').hide();
-		$('#starter_skills').show();
-		$('#attributes').hide();
-		$('#leveling_up').hide();
+		$('#choosing_professions').css('visibility', 'hidden');
+		$('#starter_armor').css('visibility', 'hidden');
+		$('#starter_weapons').css('visibility', 'hidden');
+		$('#starter_skills').css('visibility', 'visible');
+		$('#attributes').css('visibility', 'hidden');
+		$('#leveling_up').css('visibility', 'hidden');
 	});
 	$('#attributes_tab').click(function() {
 		$('#choosing_professions_tab').css({'color':'#999999','font-weight':'normal'});
@@ -141,12 +119,12 @@ $(document).ready(function() {
 
 		$('#character_arrow').css('margin-top','10.55%');
 		
-		$('#choosing_professions').hide();
-		$('#starter_armor').hide();
-		$('#starter_weapons').hide();
-		$('#starter_skills').hide();
-		$('#attributes').show();
-		$('#leveling_up').hide();
+		$('#choosing_professions').css('visibility', 'hidden');
+		$('#starter_armor').css('visibility', 'hidden');
+		$('#starter_weapons').css('visibility', 'hidden');
+		$('#starter_skills').css('visibility', 'hidden');
+		$('#attributes').css('visibility', 'visible');
+		$('#leveling_up').css('visibility', 'hidden');
 	});
 	$('#leveling_up_tab').click(function() {
 		$('#choosing_professions_tab').css({'color':'#999999','font-weight':'normal'});
@@ -158,12 +136,12 @@ $(document).ready(function() {
 
 		$('#character_arrow').css('margin-top','12.65%');
 		
-		$('#choosing_professions').hide();
-		$('#starter_armor').hide();
-		$('#starter_weapons').hide();
-		$('#starter_skills').hide();
-		$('#attributes').hide();
-		$('#leveling_up').show();
+		$('#choosing_professions').css('visibility', 'hidden');
+		$('#starter_armor').css('visibility', 'hidden');
+		$('#starter_weapons').css('visibility', 'hidden');
+		$('#starter_skills').css('visibility', 'hidden');
+		$('#attributes').css('visibility', 'hidden');
+		$('#leveling_up').css('visibility', 'visible');
 	});
 	
 	// Build
@@ -178,13 +156,13 @@ $(document).ready(function() {
 
 		$('#build_arrow').css('margin-top','2.15%');
 		
-		$('#armor').show();
-		$('#insignias').hide();
-		$('#runes').hide();
-		$('#weapons').hide();
-		$('#upgrade_components').hide();
-		$('#inscriptions').hide();
-		$('#skills').hide();
+		$('#armor').css('visibility', 'visible');
+		$('#insignias').css('visibility', 'hidden');
+		$('#runes').css('visibility', 'hidden');
+		$('#weapons').css('visibility', 'hidden');
+		$('#upgrade_components').css('visibility', 'hidden');
+		$('#inscriptions').css('visibility', 'hidden');
+		$('#skills').css('visibility', 'hidden');
 	});
 	$('#insignias_tab').click(function() {
 		$('#armor_tab').css({'color':'#999999','font-weight':'normal'});
@@ -197,13 +175,13 @@ $(document).ready(function() {
 
 		$('#build_arrow').css('margin-top','4.25%');
 		
-		$('#armor').hide();
-		$('#insignias').show();
-		$('#runes').hide();
-		$('#weapons').hide();
-		$('#upgrade_components').hide();
-		$('#inscriptions').hide();
-		$('#skills').hide();
+		$('#armor').css('visibility', 'hidden');
+		$('#insignias').css('visibility', 'visible');
+		$('#runes').css('visibility', 'hidden');
+		$('#weapons').css('visibility', 'hidden');
+		$('#upgrade_components').css('visibility', 'hidden');
+		$('#inscriptions').css('visibility', 'hidden');
+		$('#skills').css('visibility', 'hidden');
 	});
 	$('#runes_tab').click(function() {
 		$('#armor_tab').css({'color':'#999999','font-weight':'normal'});
@@ -216,13 +194,13 @@ $(document).ready(function() {
 
 		$('#build_arrow').css('margin-top','6.35%');
 		
-		$('#armor').hide();
-		$('#insignias').hide();
-		$('#runes').show();
-		$('#weapons').hide();
-		$('#upgrade_components').hide();
-		$('#inscriptions').hide();
-		$('#skills').hide();
+		$('#armor').css('visibility', 'hidden');
+		$('#insignias').css('visibility', 'hidden');
+		$('#runes').css('visibility', 'visible');
+		$('#weapons').css('visibility', 'hidden');
+		$('#upgrade_components').css('visibility', 'hidden');
+		$('#inscriptions').css('visibility', 'hidden');
+		$('#skills').css('visibility', 'hidden');
 	});
 	$('#weapons_tab').click(function() {
 		$('#armor_tab').css({'color':'#999999','font-weight':'normal'});
@@ -235,13 +213,13 @@ $(document).ready(function() {
 
 		$('#build_arrow').css('margin-top','8.45%');
 		
-		$('#armor').hide();
-		$('#insignias').hide();
-		$('#runes').hide();
-		$('#weapons').show();
-		$('#upgrade_components').hide();
-		$('#inscriptions').hide();
-		$('#skills').hide();
+		$('#armor').css('visibility', 'hidden');
+		$('#insignias').css('visibility', 'hidden');
+		$('#runes').css('visibility', 'hidden');
+		$('#weapons').css('visibility', 'visible');
+		$('#upgrade_components').css('visibility', 'hidden');
+		$('#inscriptions').css('visibility', 'hidden');
+		$('#skills').css('visibility', 'hidden');
 	});
 	$('#upgrade_components_tab').click(function() {
 		$('#armor_tab').css({'color':'#999999','font-weight':'normal'});
@@ -254,13 +232,13 @@ $(document).ready(function() {
 
 		$('#build_arrow').css('margin-top','10.55%');
 		
-		$('#armor').hide();
-		$('#insignias').hide();
-		$('#runes').hide();
-		$('#weapons').hide();
-		$('#upgrade_components').show();
-		$('#inscriptions').hide();
-		$('#skills').hide();
+		$('#armor').css('visibility', 'hidden');
+		$('#insignias').css('visibility', 'hidden');
+		$('#runes').css('visibility', 'hidden');
+		$('#weapons').css('visibility', 'hidden');
+		$('#upgrade_components').css('visibility', 'visible');
+		$('#inscriptions').css('visibility', 'hidden');
+		$('#skills').css('visibility', 'hidden');
 	});
 	$('#inscriptions_tab').click(function() {
 		$('#armor_tab').css({'color':'#999999','font-weight':'normal'});
@@ -273,13 +251,13 @@ $(document).ready(function() {
 
 		$('#build_arrow').css('margin-top','12.65%');
 		
-		$('#armor').hide();
-		$('#insignias').hide();
-		$('#runes').hide();
-		$('#weapons').hide();
-		$('#upgrade_components').hide();
-		$('#inscriptions').show();
-		$('#skills').hide();
+		$('#armor').css('visibility', 'hidden');
+		$('#insignias').css('visibility', 'hidden');
+		$('#runes').css('visibility', 'hidden');
+		$('#weapons').css('visibility', 'hidden');
+		$('#upgrade_components').css('visibility', 'hidden');
+		$('#inscriptions').css('visibility', 'visible');
+		$('#skills').css('visibility', 'hidden');
 	});
 	$('#skills_tab').click(function() {
 		$('#armor_tab').css({'color':'#999999','font-weight':'normal'});
@@ -292,13 +270,13 @@ $(document).ready(function() {
 
 		$('#build_arrow').css('margin-top','14.75%');
 		
-		$('#armor').hide();
-		$('#insignias').hide();
-		$('#runes').hide();
-		$('#weapons').hide();
-		$('#upgrade_components').hide();
-		$('#inscriptions').hide();
-		$('#skills').show();
+		$('#armor').css('visibility', 'hidden');
+		$('#insignias').css('visibility', 'hidden');
+		$('#runes').css('visibility', 'hidden');
+		$('#weapons').css('visibility', 'hidden');
+		$('#upgrade_components').css('visibility', 'hidden');
+		$('#inscriptions').css('visibility', 'hidden');
+		$('#skills').css('visibility', 'visible');
 	});
 	
 	// Combat
@@ -315,15 +293,15 @@ $(document).ready(function() {
 
 		$('#combat_arrow').css('margin-top','2.15%');
 		
-		$('#attack_layers').show();
-		$('#conditions').hide();
-		$('#morale_boosts').hide();
-		$('#death_penalty').hide();
-		$('#areas_of_effect').hide();
-		$('#weapon_damage').hide();
-		$('#skill_damage').hide();
-		$('#drops').hide();
-		$('#critical_hits').hide();
+		$('#attack_layers').css('visibility', 'visible');
+		$('#conditions').css('visibility', 'hidden');
+		$('#morale_boosts').css('visibility', 'hidden');
+		$('#death_penalty').css('visibility', 'hidden');
+		$('#areas_of_effect').css('visibility', 'hidden');
+		$('#weapon_damage').css('visibility', 'hidden');
+		$('#skill_damage').css('visibility', 'hidden');
+		$('#drops').css('visibility', 'hidden');
+		$('#critical_hits').css('visibility', 'hidden');
 	});
 	$('#conditions_tab').click(function() {
 		$('#attack_layers_tab').css({'color':'#999999','font-weight':'normal'});
@@ -338,15 +316,15 @@ $(document).ready(function() {
 
 		$('#combat_arrow').css('margin-top','4.25%');
 		
-		$('#attack_layers').hide();
-		$('#conditions').show();
-		$('#morale_boosts').hide();
-		$('#death_penalty').hide();
-		$('#areas_of_effect').hide();
-		$('#weapon_damage').hide();
-		$('#skill_damage').hide();
-		$('#drops').hide();
-		$('#critical_hits').hide();
+		$('#attack_layers').css('visibility', 'hidden');
+		$('#conditions').css('visibility', 'visible');
+		$('#morale_boosts').css('visibility', 'hidden');
+		$('#death_penalty').css('visibility', 'hidden');
+		$('#areas_of_effect').css('visibility', 'hidden');
+		$('#weapon_damage').css('visibility', 'hidden');
+		$('#skill_damage').css('visibility', 'hidden');
+		$('#drops').css('visibility', 'hidden');
+		$('#critical_hits').css('visibility', 'hidden');
 	});
 	$('#morale_boosts_tab').click(function() {
 		$('#attack_layers_tab').css({'color':'#999999','font-weight':'normal'});
@@ -361,15 +339,15 @@ $(document).ready(function() {
 
 		$('#combat_arrow').css('margin-top','6.35%');
 		
-		$('#attack_layers').hide();
-		$('#conditions').hide();
-		$('#morale_boosts').show();
-		$('#death_penalty').hide();
-		$('#areas_of_effect').hide();
-		$('#weapon_damage').hide();
-		$('#skill_damage').hide();
-		$('#drops').hide();
-		$('#critical_hits').hide();
+		$('#attack_layers').css('visibility', 'hidden');
+		$('#conditions').css('visibility', 'hidden');
+		$('#morale_boosts').css('visibility', 'visible');
+		$('#death_penalty').css('visibility', 'hidden');
+		$('#areas_of_effect').css('visibility', 'hidden');
+		$('#weapon_damage').css('visibility', 'hidden');
+		$('#skill_damage').css('visibility', 'hidden');
+		$('#drops').css('visibility', 'hidden');
+		$('#critical_hits').css('visibility', 'hidden');
 	});
 	$('#death_penalty_tab').click(function() {
 		$('#attack_layers_tab').css({'color':'#999999','font-weight':'normal'});
@@ -384,15 +362,15 @@ $(document).ready(function() {
 
 		$('#combat_arrow').css('margin-top','8.45%');
 		
-		$('#attack_layers').hide();
-		$('#conditions').hide();
-		$('#morale_boosts').hide();
-		$('#death_penalty').show();
-		$('#areas_of_effect').hide();
-		$('#weapon_damage').hide();
-		$('#skill_damage').hide();
-		$('#drops').hide();
-		$('#critical_hits').hide();
+		$('#attack_layers').css('visibility', 'hidden');
+		$('#conditions').css('visibility', 'hidden');
+		$('#morale_boosts').css('visibility', 'hidden');
+		$('#death_penalty').css('visibility', 'visible');
+		$('#areas_of_effect').css('visibility', 'hidden');
+		$('#weapon_damage').css('visibility', 'hidden');
+		$('#skill_damage').css('visibility', 'hidden');
+		$('#drops').css('visibility', 'hidden');
+		$('#critical_hits').css('visibility', 'hidden');
 	});
 	$('#areas_of_effect_tab').click(function() {
 		$('#attack_layers_tab').css({'color':'#999999','font-weight':'normal'});
@@ -407,15 +385,15 @@ $(document).ready(function() {
 
 		$('#combat_arrow').css('margin-top','10.55%');
 		
-		$('#attack_layers').hide();
-		$('#conditions').hide();
-		$('#morale_boosts').hide();
-		$('#death_penalty').hide();
-		$('#areas_of_effect').show();
-		$('#weapon_damage').hide();
-		$('#skill_damage').hide();
-		$('#drops').hide();
-		$('#critical_hits').hide();
+		$('#attack_layers').css('visibility', 'hidden');
+		$('#conditions').css('visibility', 'hidden');
+		$('#morale_boosts').css('visibility', 'hidden');
+		$('#death_penalty').css('visibility', 'hidden');
+		$('#areas_of_effect').css('visibility', 'visible');
+		$('#weapon_damage').css('visibility', 'hidden');
+		$('#skill_damage').css('visibility', 'hidden');
+		$('#drops').css('visibility', 'hidden');
+		$('#critical_hits').css('visibility', 'hidden');
 	});
 	$('#weapon_damage_tab').click(function() {
 		$('#attack_layers_tab').css({'color':'#999999','font-weight':'normal'});
@@ -430,15 +408,15 @@ $(document).ready(function() {
 
 		$('#combat_arrow').css('margin-top','12.65%');
 		
-		$('#attack_layers').hide();
-		$('#conditions').hide();
-		$('#morale_boosts').hide();
-		$('#death_penalty').hide();
-		$('#areas_of_effect').hide();
-		$('#weapon_damage').show();
-		$('#skill_damage').hide();
-		$('#drops').hide();
-		$('#critical_hits').hide();
+		$('#attack_layers').css('visibility', 'hidden');
+		$('#conditions').css('visibility', 'hidden');
+		$('#morale_boosts').css('visibility', 'hidden');
+		$('#death_penalty').css('visibility', 'hidden');
+		$('#areas_of_effect').css('visibility', 'hidden');
+		$('#weapon_damage').css('visibility', 'visible');
+		$('#skill_damage').css('visibility', 'hidden');
+		$('#drops').css('visibility', 'hidden');
+		$('#critical_hits').css('visibility', 'hidden');
 	});
 	$('#skill_damage_tab').click(function() {
 		$('#attack_layers_tab').css({'color':'#999999','font-weight':'normal'});
@@ -453,15 +431,15 @@ $(document).ready(function() {
 
 		$('#combat_arrow').css('margin-top','14.75%');
 		
-		$('#attack_layers').hide();
-		$('#conditions').hide();
-		$('#morale_boosts').hide();
-		$('#death_penalty').hide();
-		$('#areas_of_effect').hide();
-		$('#weapon_damage').hide();
-		$('#skill_damage').show();
-		$('#drops').hide();
-		$('#critical_hits').hide();
+		$('#attack_layers').css('visibility', 'hidden');
+		$('#conditions').css('visibility', 'hidden');
+		$('#morale_boosts').css('visibility', 'hidden');
+		$('#death_penalty').css('visibility', 'hidden');
+		$('#areas_of_effect').css('visibility', 'hidden');
+		$('#weapon_damage').css('visibility', 'hidden');
+		$('#skill_damage').css('visibility', 'visible');
+		$('#drops').css('visibility', 'hidden');
+		$('#critical_hits').css('visibility', 'hidden');
 	});
 	$('#drops_tab').click(function() {
 		$('#attack_layers_tab').css({'color':'#999999','font-weight':'normal'});
@@ -476,15 +454,15 @@ $(document).ready(function() {
 
 		$('#combat_arrow').css('margin-top','16.85%');
 		
-		$('#attack_layers').hide();
-		$('#conditions').hide();
-		$('#morale_boosts').hide();
-		$('#death_penalty').hide();
-		$('#areas_of_effect').hide();
-		$('#weapon_damage').hide();
-		$('#skill_damage').hide();
-		$('#drops').show();
-		$('#critical_hits').hide();
+		$('#attack_layers').css('visibility', 'hidden');
+		$('#conditions').css('visibility', 'hidden');
+		$('#morale_boosts').css('visibility', 'hidden');
+		$('#death_penalty').css('visibility', 'hidden');
+		$('#areas_of_effect').css('visibility', 'hidden');
+		$('#weapon_damage').css('visibility', 'hidden');
+		$('#skill_damage').css('visibility', 'hidden');
+		$('#drops').css('visibility', 'visible');
+		$('#critical_hits').css('visibility', 'hidden');
 	});
 	$('#critical_hits_tab').click(function() {
 		$('#attack_layers_tab').css({'color':'#999999','font-weight':'normal'});
@@ -499,14 +477,14 @@ $(document).ready(function() {
 
 		$('#combat_arrow').css('margin-top','17.95%');
 		
-		$('#attack_layers').hide();
-		$('#conditions').hide();
-		$('#morale_boosts').hide();
-		$('#death_penalty').hide();
-		$('#areas_of_effect').hide();
-		$('#weapon_damage').hide();
-		$('#skill_damage').hide();
-		$('#drops').hide();
-		$('#critical_hits').show();
+		$('#attack_layers').css('visibility', 'hidden');
+		$('#conditions').css('visibility', 'hidden');
+		$('#morale_boosts').css('visibility', 'hidden');
+		$('#death_penalty').css('visibility', 'hidden');
+		$('#areas_of_effect').css('visibility', 'hidden');
+		$('#weapon_damage').css('visibility', 'hidden');
+		$('#skill_damage').css('visibility', 'hidden');
+		$('#drops').css('visibility', 'hidden');
+		$('#critical_hits').css('visibility', 'visible');
 	});
 });
