@@ -2,7 +2,7 @@ $(document).ready(function() {
 	$('#layout_description').hide();	
 	
 	$('.layout').hover(function() {
-		$(this).css('border', '1pt solid #ec2127');
+		$(this).css('border', '2pt solid #ec2127');
 		$('#default_description').hide();
 		$('#layout_description').hide().fadeIn(125);
 	},
